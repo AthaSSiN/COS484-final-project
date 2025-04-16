@@ -1,4 +1,12 @@
 # Prefix Tuning
+
+## Potential code that might need to be changed depending on how it fucks up:
+
+1. Anything with curr_dir and gold_dir in gpt2/run_generation.py
+2. gen_dir in gpt2/gen.py
+
+
+### If you have already trained a model and then it fucks up in evaluation, just remove the --do_train and --overwrite_output_dir flags in gpt2/train_e2e.py and run the code again to prevent retraining the model.
 ## Files:
     .
     ├── gpt2                          # Code for GPT2 style autoregressive LM

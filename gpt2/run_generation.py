@@ -789,13 +789,13 @@ def main():
 
         else:
             if ('lowdata' in args.model_name_or_path) or (args.prefixModel_name_or_path is not None and 'lowdata' in args.prefixModel_name_or_path):
-                test_path = '/u/scr/xlisali/e2e_data/src1_valid.txt'
+                test_path = '../e2e_data/src1_valid.txt'
             else:
 
                 if args.eval_dataset == 'valid':
-                    test_path = '/u/scr/xlisali/e2e_data/src1_valid.txt'
+                    test_path = '../e2e_data/src1_valid.txt'
                 elif args.eval_dataset == 'test':
-                    test_path = '/u/scr/xlisali/e2e_data/src1_test.txt'
+                    test_path = '../e2e_data/src1_test.txt'
 
             print('using the test path ', test_path)
             if args.prefixModel_name_or_path is not None:
@@ -814,16 +814,16 @@ def main():
             prompt_text_lst = list(prompt_text_dict.keys())
             split_file = args.eval_dataset
             decode_mode = 'beam'
-            curr_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            curr_dir = os.path.join('data2text_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, decode_mode))
             print(curr_dir)
-            gold_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            gold_dir = os.path.join('data2text_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file,'gold'))
             print(gold_dir)
             write_e2e_corr(prompt_text_lst, prompt_text_dict, gold_dir)
-            src_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            src_dir = os.path.join('data2text_models/',
                                    args.gen_dir,
                                    '{}_{}_{}'.format(temp,split_file, 'src'))
             write_e2e_src(prompt_text_lst, src_dir)
@@ -834,15 +834,15 @@ def main():
         QUICK_CHECK = False
         if args.task_mode == 'webnlg':
             if args.eval_dataset == 'valid':
-                test_path = "/u/scr/xlisali/WebNLG/webnlg-dataset/webnlg_challenge_2017/dev.json"
+                test_path = "../data/webnlg_challenge_2017/dev.json"   
             elif args.eval_dataset == 'test':
-                test_path = "/u/scr/xlisali/WebNLG/webnlg-dataset/webnlg_challenge_2017/test.json"
+                test_path = "../data/webnlg_challenge_2017/test.json"
             else:
                 assert False,  "eval_dataset needs to be [valid, test]"
             prompt_text_dict = read_webnlg_files(test_path, tokenizer)
         elif args.task_mode == 'triples':
-            test_path = "/u/scr/xlisali/DART/dart/data/v1.1.1/dart-v1.1.1-full-test.json"
-            # test_path = "/u/scr/xlisali/DART/dart/data/v1.1.1/dart-v1.1.1-full-dev.json"
+            test_path = "../data/dart/dart-v1.1.1-full-test.json"
+            # test_path = "../DART/dart/data/v1.1.1/dart-v1.1.1-full-dev.json"
             prompt_text_dict = read_triples_files(test_path, tokenizer)
 
         if QUICK_CHECK:
@@ -859,16 +859,16 @@ def main():
                 temp = os.path.basename(args.model_name_or_path)
             split_file = args.eval_dataset # test
             decode_mode = 'beam'
-            curr_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            curr_dir = os.path.join('webnlg_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, decode_mode))
             print(curr_dir)
-            gold_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            gold_dir = os.path.join('webnlg_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, 'gold'))
             print(gold_dir)
             write_e2e_corr(prompt_text_pair, prompt_text_dict, gold_dir)
-            src_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            src_dir = os.path.join('webnlg_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, 'src'))
             write_e2e_src(prompt_text_pair, src_dir)
@@ -880,10 +880,10 @@ def main():
     elif args.task_mode == 'classify-sentiment' or args.task_mode == 'classify-topic':
         QUICK_CHECK = False
         if args.task_mode == 'classify-sentiment':
-            test_path = "/u/scr/xlisali/IMDB/test.txt"
+            test_path = "../IMDB/test.txt"
             prompt_text_dict = read_classifySentiment_files(test_path, tokenizer)
         elif args.task_mode == 'classify-topic':
-            test_path = "/u/scr/xlisali/contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
+            test_path = "../contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
             prompt_text_dict = read_classifyTopic_files(test_path, tokenizer)
 
         args.num_return_sequences = 1
@@ -904,25 +904,25 @@ def main():
             # print(prompt_text_dict)
             split_file = 'test' # test
             decode_mode = 'greedy'
-            curr_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            curr_dir = os.path.join('classify_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, decode_mode))
-            # curr_dir = '/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
+            # curr_dir = '../contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
             #     temp, split_file, decode_mode)
             print(curr_dir)
-            gold_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            gold_dir = os.path.join('classify_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, 'gold'))
-            # gold_dir = '/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
+            # gold_dir = '../contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
             #     temp,
             #     split_file,
             #     'gold')
             print(gold_dir)
             write_e2e_src(prompt_text_tgt, gold_dir)
-            src_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            src_dir = os.path.join('classify_models/',
                                    args.gen_dir,
                                    '{}_{}_{}'.format(temp, split_file, 'src'))
-            # src_dir = '/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
+            # src_dir = '../contrast_LM/transformers/examples/text-generation/classify_results/{}_{}_{}'.format(
             #     temp,
             #     split_file,
             #     'src')
@@ -934,12 +934,12 @@ def main():
     elif args.task_mode == 'cnndm' or args.task_mode == 'xsum':
         QUICK_CHECK = False
         if args.task_mode == 'cnndm':
-            test_path = "/u/scr/xlisali/contrast_LM/transformers/examples/seq2seq/cnn_dm/test.source"
+            test_path = "../contrast_LM/transformers/examples/seq2seq/cnn_dm/test.source"
             max_source_length = 512
             max_target_length = 142
             prompt_text_dict = read_sum_files(test_path, tokenizer, max_source_length, max_target_length)
         elif args.task_mode == 'xsum':
-            test_path = "/u/scr/xlisali/contrast_LM/transformers/examples/seq2seq/xsum/test.source"
+            test_path = "../contrast_LM/transformers/examples/seq2seq/xsum/test.source"
             max_source_length = 512
             max_target_length = 100
             prompt_text_dict = read_sum_files(test_path, tokenizer, max_source_length, max_target_length)
@@ -958,13 +958,13 @@ def main():
             # print(prompt_text_dict)
             split_file = 'test' # test
             decode_mode = 'beam'
-            curr_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            curr_dir = os.path.join('summarization_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, decode_mode))
 
 
             print(curr_dir)
-            gold_dir = os.path.join('/u/scr/xlisali/contrast_LM/transformers/examples/text-generation/',
+            gold_dir = os.path.join('summarization_models/',
                                     args.gen_dir,
                                     '{}_{}_{}'.format(temp, split_file, 'gold'))
             print(gold_dir)
@@ -1324,21 +1324,21 @@ def main():
     if args.task_mode == 'data2text':
         out_file_eval = curr_dir+'_eval'
         print(out_file_eval, '\n', gold_dir, '\n', curr_dir)
-        os.system("python /u/scr/xlisali/e2e-metrics/measure_scores.py "
+        os.system("python ../e2e-metrics/measure_scores.py "
                   "{} {} -p  -t -H >> {}".format(gold_dir, curr_dir, out_file_eval))
 
     elif args.task_mode == 'webnlg':
         out_file_eval = curr_dir + '_eval'
         print(out_file_eval, '\n', gold_dir, '\n', curr_dir)
         tagging = os.path.basename(curr_dir)
-        os.system("bash /u/scr/xlisali/DART/dart/evaluation/run_eval_on_webnlg.sh "
+        os.system("bash ../DART/dart/evaluation/run_eval_on_webnlg.sh "
                   "{} {} >> {}".format(curr_dir, tagging, out_file_eval))
 
 
     elif 'classify' in curr_dir:
         print(curr_dir)
         print(gold_dir)
-        temp_command = "python /u/scr/xlisali/classify-eval/eval.py {} {}".format(gold_dir, curr_dir)
+        temp_command = "python ../classify-eval/eval.py {} {}".format(gold_dir, curr_dir)
         print(temp_command)
         os.system(temp_command)
 
@@ -1346,7 +1346,7 @@ def main():
         print('view results at ')
         print(curr_dir)
 
-        temp_command = "python /u/scr/xlisali/attribute-eval/eval.py {} ".format(curr_dir)
+        temp_command = "python ../attribute-eval/eval.py {} ".format(curr_dir)
         print(temp_command)
         os.system(temp_command)
 

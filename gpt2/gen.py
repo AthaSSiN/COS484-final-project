@@ -177,7 +177,7 @@ if __name__ == '__main__':
     elif mode == 'webnlg':
         Token_FILE = MODEL_FILE
         # gen_dir = 'webNLG_results'
-        gen_dir = 'webNLG_results2'
+        gen_dir = '.'
 
         sub_model_name = os.path.basename(MODEL_FILE)
 
@@ -282,10 +282,10 @@ if __name__ == '__main__':
 
 
     if MODEL_FILE == 'gpt2-large':
-        COMMANDLINE += ' --cache_dir /u/scr/xlisali/contrast_LM/transformers/examples/control/gpt2-large-s3 '
+        COMMANDLINE += ' --cache_dir ../cache/gpt2-large-s3 '
 
     if MODEL_FILE == 'gpt2-medium':
-        COMMANDLINE += ' --cache_dir /u/scr/xlisali/contrast_LM/transformers/examples/control/gpt2-medium-s3 '
+        COMMANDLINE += ' --cache_dir ../cache/gpt2-medium-s3 '
 
 
     print(COMMANDLINE)

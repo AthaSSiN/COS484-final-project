@@ -79,15 +79,15 @@ if __name__ == '__main__':
 
 
     elif args.mode == 'triples':
-        TRAIN_FILE = "/u/scr/xlisali/DART/dart/data/v1.1.1/dart-v1.1.1-full-train.json"
-        TEST_FILE = "/u/scr/xlisali/DART/dart/data/v1.1.1/dart-v1.1.1-full-dev.json"
+        TRAIN_FILE = "../DART/dart/data/v1.1.1/dart-v1.1.1-full-train.json"
+        TEST_FILE = "../DART/dart/data/v1.1.1/dart-v1.1.1-full-dev.json"
         folder_name = "triples_models/"
 
 
     elif args.mode == 'webnlg':
         # 2017 Challeng Version.
-        TRAIN_FILE = "/u/scr/xlisali/WebNLG/webnlg-dataset/webnlg_challenge_2017/train.json"
-        TEST_FILE = "/u/scr/xlisali/WebNLG/webnlg-dataset/webnlg_challenge_2017/dev.json"
+        TRAIN_FILE = "../WebNLG/webnlg-dataset/webnlg_challenge_2017/train.json"
+        TEST_FILE = "../WebNLG/webnlg-dataset/webnlg_challenge_2017/dev.json"
         folder_name = "webnlg_models/"
 
     elif args.mode == 'writingPrompts':
@@ -161,24 +161,24 @@ if __name__ == '__main__':
             xsum_app += ' --fp16 --fp16_opt_level O1 '
 
     elif args.mode == 'sentiment':
-        TRAIN_FILE = "/u/scr/xlisali/IMDB/train.txt"
-        TEST_FILE = "/u/scr/xlisali/IMDB/dev.txt"
+        TRAIN_FILE = "../IMDB/train.txt"
+        TEST_FILE = "../IMDB/dev.txt"
         folder_name = "sentiment_models/"
 
     elif args.mode == 'topic':
-        TRAIN_FILE = "/u/scr/xlisali/contrast_LM/transformers/examples/text-classification/glue_data/AG-news/train1.tsv"
-        TEST_FILE = "/u/scr/xlisali/contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
+        TRAIN_FILE = "../contrast_LM/transformers/examples/text-classification/glue_data/AG-news/train1.tsv"
+        TEST_FILE = "../contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
         folder_name = "topic_models/"
 
     elif args.mode == 'classify-sentiment':
-        TRAIN_FILE = "/u/scr/xlisali/IMDB/train.txt"
-        TEST_FILE = "/u/scr/xlisali/IMDB/dev.txt"
+        TRAIN_FILE = "../IMDB/train.txt"
+        TEST_FILE = "../IMDB/dev.txt"
         folder_name = "classification_models/"
         assert args.optim_prefix == 'yes'
 
     elif args.mode == 'classify-topic':
-        TRAIN_FILE = "/u/scr/xlisali/contrast_LM/transformers/examples/text-classification/glue_data/AG-news/train1.tsv"
-        TEST_FILE = "/u/scr/xlisali/contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
+        TRAIN_FILE = "../contrast_LM/transformers/examples/text-classification/glue_data/AG-news/train1.tsv"
+        TEST_FILE = "../contrast_LM/transformers/examples/text-classification/glue_data/AG-news/dev1.tsv"
         folder_name = "classification_models/"
         assert args.optim_prefix == 'yes'
 
@@ -235,7 +235,7 @@ if __name__ == '__main__':
 
 
     if OLD_MODEL == 'gpt2-large':
-        app += ' --cache_dir /u/scr/xlisali/contrast_LM/transformers/examples/control/gpt2-large-s3 '
+        app += ' --cache_dir ../contrast_LM/transformers/examples/control/gpt2-large-s3 '
 
     if args.tuning_mode == 'finetune-top':
         app += ' --top_layers {} '.format(args.top_layers)

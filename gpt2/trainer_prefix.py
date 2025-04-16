@@ -716,8 +716,8 @@ class Trainer_Prefix:
             model, self.optimizer = amp.initialize(model, self.optimizer, opt_level=self.args.fp16_opt_level)
 
         # multi-gpu training (should be after apex fp16 initialization)
-        if self.args.n_gpu > 1:
-            model = torch.nn.DataParallel(model)
+        # if self.args.n_gpu > 1:
+        #     model = torch.nn.DataParallel(model)
 
         # Distributed training (should be after apex fp16 initialization)
         if self.args.local_rank != -1:
@@ -1160,7 +1160,15 @@ class Trainer_Prefix:
             if self.gpt2 is not None:
                 self.gpt2.train()
         inputs = self._prepare_inputs(inputs)
-
+        
+        # for k, v in inputs.items():
+        #     if isinstance(v, torch.Tensor):
+        #         print(k, v.device)
+                
+        # print(model.device)
+        # print(self.optimizer.param_groups[0]['params'][0].device)
+        # print(self.gpt2.device)
+        # input()
         if self.args.fp16 and _use_native_amp:
             with autocast():
                 if self.distill:
@@ -1481,10 +1489,10 @@ class Trainer_Prefix:
 
         model = self.model
         # multi-gpu eval
-        if self.args.n_gpu > 1:
-            model = torch.nn.DataParallel(model)
-        else:
-            model = self.model
+        # if self.args.n_gpu > 1:
+            # model = torch.nn.DataParallel(model)
+        # else:
+        model = self.model
         # Note: in torch.distributed mode, there's no point in wrapping the model
         # inside a DistributedDataParallel as we'll be under `no_grad` anyways.
 

@@ -853,12 +853,12 @@ def eval(args, model=None) -> SummarizationModule:
             print(k, v)
     # final evaluation.
     # gold_dir = 'e2e/test_gold.target'
-    # os.system("python /u/scr/xlisali/e2e-metrics/measure_scores.py "
+    # os.system("python ../e2e-metrics/measure_scores.py "
     #           "{} {} -p  -t -H ".format(gold_dir, out_path))
 
     # out_file_eval = curr_dir + '_eval'
     # print(out_file_eval, '\n', gold_dir, '\n', curr_dir)
-    # os.system("python /u/scr/xlisali/e2e-metrics/measure_scores.py "
+    # os.system("python ../e2e-metrics/measure_scores.py "
     #           "{} {} -p  -t -H >> {}".format(gold_dir, curr_dir, out_file_eval))
 
 

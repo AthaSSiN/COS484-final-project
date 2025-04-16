@@ -327,7 +327,7 @@ class DataTrainingArguments:
     )
 
     finetuned_model_path: Optional[str] = field(
-        default="/u/scr/xlisali/contrast_LM/transformers/examples/full/full/webnlgfinetune_n_20_act_cat_b=6-e"
+        default="../contrast_LM/transformers/examples/full/full/webnlgfinetune_n_20_act_cat_b=6-e"
                 "=10_d=0.0_u=no_lr=1e-05_w=0.0_s=101_r=n_m=512_earlystop", metadata={"help": "finetuned model path (teacher model)"}
     )
 
@@ -497,7 +497,8 @@ def main():
 
     parser = HfArgumentParser((ModelArguments, DataTrainingArguments, TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
-
+    # training_args.device = 'cuda:0'
+    # training_args.n_gpu = 1
 
     if data_args.eval_data_file is None and training_args.do_eval:
         raise ValueError(
@@ -1029,7 +1030,7 @@ def main():
 
     if 'lowdata' in training_args.output_dir:
         print('evaluating the PPL on full dev data. ')
-        data_args.eval_data_file = "/u/scr/xlisali/e2e_data/src1_valid.txt"
+        data_args.eval_data_file = "../data/e2e_data/src1_valid.txt"
         eval_dataset = (
             get_dataset(data_args, tokenizer=tokenizer, evaluate=True, cache_dir=model_args.cache_dir,
                         training_args=training_args, finetune_mode=(model_args.tuning_mode == 'finetune'))
