@@ -18,9 +18,11 @@ from src.agents import SAPARAgent, CGAgent
 from prompt.avalon_sapar_prompt import summary_prompt, plan_prompt, response_prompt, system_prompt, \
     action_prompt, suggestion_prompt, update_prompt, analysis_prompt, \
     strategy_prompt, candidate_actions, init_strategies, role_introduction, role_target
-from prompt.avalon_cg_prompt import rule_role_prompt, select_question_prompt, ask_question_prompt, \
-    generate_answer_prompt, reflection_prompt, extract_suggestion_prompt, generate_response_prompt, \
-    informativeness_prompt, question_list
+
+from prompt.avalon_sapar_prompt_cot import summary_prompt_2, plan_prompt_2, response_prompt_2, system_prompt_2, \
+    action_prompt_2, suggestion_prompt_2, update_prompt_2, analysis_prompt_2, \
+    strategy_prompt_2
+
 from src.games.avalon.extract_demos import number_extract_prompt, player_extractor_demos, vote_extractor_demos, \
     quest_extractor_demos, choose_identify_extractor_demos, select_merlin_extractor_demos, bool_extract_prompt, \
     quest_extract_prompt
@@ -32,7 +34,7 @@ api_key = os.getenv("OPENAI_API_KEY")
 base_url = "https://api.openai.com/v1"
 roles = ["Merlin", "Percival", "Loyal Servant 1", "Loyal Servant 2", "Morgana", "Assassin"]
 
-bert_model = SentenceTransformer("multi-qa-mpnet-base-cos-v1", device="cuda")
+# bert_model = SentenceTransformer("multi-qa-mpnet-base-cos-v1", device="cuda")
 
 
 def run_game(game_output_dir: str, camp, game_idx):
@@ -42,7 +44,7 @@ def run_game(game_output_dir: str, camp, game_idx):
     language = 'english'
     
     sapar_ai_model = "gpt-4.1-nano"
-    cg_ai_model = "gpt-4.1-mini"
+    cg_ai_model = "gpt-4.1-nano"
     
     extractor_model = "gpt-4.1-nano"
     ai_model = 'gpt-4.1-nano'
@@ -92,52 +94,52 @@ def run_game(game_output_dir: str, camp, game_idx):
                                  "other_strategy": other_strategy, "candidate_actions": candidate_actions}
                 )
             )
-        else:
+        else: # WITH Chain of Thought
             if game_idx == 0:
-                previous_exp_pool = []
+                role_strategy = init_strategies[role]
+                other_strategy = "None"
+                suggestion = "None"
             else:
                 load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[name]}_reflection.json"
-                previous_exp_pool = read_json(load_file)
+                experience = read_json(load_file)
+                role_strategy = experience.get("strategy", "None")
+                other_strategy = experience.get("other_strategy", "None")
+                suggestion = experience.get("suggestion", "None")
+            role_system_prompt_2 = system_prompt_2.format(name=name, role=role, strategy=role_strategy,
+                                                      suggestion=suggestion, other_strategy=other_strategy)
             player_args.append(
                 (
-                    CGAgent, {"name": name, "role": role, "rule_role_prompt": rule_role_prompt,
-                              "select_question_prompt": select_question_prompt,
-                              "ask_question_prompt": ask_question_prompt,
-                              "generate_answer_prompt": generate_answer_prompt,
-                              "reflection_prompt": reflection_prompt,
-                              "extract_suggestion_prompt": extract_suggestion_prompt,
-                              "generate_response_prompt": generate_response_prompt,
-                              "informativeness_prompt": informativeness_prompt,
-                              "question_list": question_list.get(role, []), "retrival_model": bert_model,
-                              "model": cg_ai_model, "freshness_k": 15, "informativeness_n": 15, "experience_window": 50,
-                              "temperature": 0.3, "api_key": "", "previous_exp_pool": previous_exp_pool,
-                              "output_dir": log_dir}
+                    SAPARAgent, {"name": name, "role": role, "role_intro": role_introduction[role.lower()],
+                                 "game_goal": role_target[role], "strategy": role_strategy,
+                                 "system_prompt": role_system_prompt_2, "summary_prompt": summary_prompt_2,
+                                 "analysis_prompt": analysis_prompt_2, "plan_prompt": plan_prompt_2,
+                                 "action_prompt": action_prompt_2, "response_prompt": response_prompt_2, "model": cg_ai_model,
+                                 "temperature": 0.3,
+                                 "api_key": None, "output_dir": log_dir, "suggestion_prompt": suggestion_prompt_2,
+                                 "strategy_prompt": strategy_prompt_2, "update_prompt": update_prompt_2,
+                                 "suggestion": suggestion,
+                                 "other_strategy": other_strategy, "candidate_actions": candidate_actions}
                 )
             )
             # if game_idx == 0:
-            #     role_strategy = init_strategies[role]
-            #     other_strategy = "None"
-            #     suggestion = "None"
+            #     previous_exp_pool = []
             # else:
             #     load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[name]}_reflection.json"
-            #     experience = read_json(load_file)
-            #     role_strategy = experience.get("strategy", "None")
-            #     other_strategy = experience.get("other_strategy", "None")
-            #     suggestion = experience.get("suggestion", "None")
-            # role_system_prompt = system_prompt.format(name=name, role=role, strategy=role_strategy,
-            #                                           suggestion=suggestion, other_strategy=other_strategy)
+            #     previous_exp_pool = read_json(load_file)
             # player_args.append(
             #     (
-            #         SAPARAgent, {"name": name, "role": role, "role_intro": role_introduction[role.lower()],
-            #                      "game_goal": role_target[role], "strategy": role_strategy,
-            #                      "system_prompt": role_system_prompt, "summary_prompt": summary_prompt,
-            #                      "analysis_prompt": analysis_prompt, "plan_prompt": plan_prompt,
-            #                      "action_prompt": action_prompt, "response_prompt": response_prompt, "model": cg_ai_model,
-            #                      "temperature": 0.3,
-            #                      "api_key": None, "output_dir": log_dir, "suggestion_prompt": suggestion_prompt,
-            #                      "strategy_prompt": strategy_prompt, "update_prompt": update_prompt,
-            #                      "suggestion": suggestion,
-            #                      "other_strategy": other_strategy, "candidate_actions": candidate_actions}
+            #         CGAgent, {"name": name, "role": role, "rule_role_prompt": rule_role_prompt,
+            #                   "select_question_prompt": select_question_prompt,
+            #                   "ask_question_prompt": ask_question_prompt,
+            #                   "generate_answer_prompt": generate_answer_prompt,
+            #                   "reflection_prompt": reflection_prompt,
+            #                   "extract_suggestion_prompt": extract_suggestion_prompt,
+            #                   "generate_response_prompt": generate_response_prompt,
+            #                   "informativeness_prompt": informativeness_prompt,
+            #                   "question_list": question_list.get(role, []), "retrival_model": bert_model,
+            #                   "model": cg_ai_model, "freshness_k": 15, "informativeness_n": 15, "experience_window": 50,
+            #                   "temperature": 0.3, "api_key": "", "previous_exp_pool": previous_exp_pool,
+            #                   "output_dir": log_dir}
             #     )
             # )
 
@@ -209,7 +211,7 @@ def main():
     openai.api_key = api_key
     openai.base_url = base_url
     for game_round in range(args.start_game_idx, args.game_count):
-        output_dir = f"playing_log/avalon/battle/{args.exp_name}-{args.camp}" + "-game_{}"
+        output_dir = f"playing_log/avalon/battle/cot_{args.exp_name}-{args.camp}" + "-game_{}"
         run_game(output_dir, camp=args.camp, game_idx=game_round)
         print("game finish!!! game index {}".format(game_round))
 
