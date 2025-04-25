@@ -30,7 +30,7 @@ from src.utils import create_dir, read_json
 import os
 api_key = os.getenv("OPENAI_API_KEY")
 base_url = "https://api.openai.com/v1"
-roles = ["Merlin", "Percival", "Loyal Servant", "Loyal Servant", "Morgana", "Assassin"]
+roles = ["Merlin", "Percival", "Loyal Servant 1", "Loyal Servant 2", "Morgana", "Assassin"]
 
 bert_model = SentenceTransformer("multi-qa-mpnet-base-cos-v1", device="cuda")
 
@@ -40,8 +40,10 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     mode = 'watch'
     language = 'english'
-    sapar_ai_model = "gpt-4o-mini"
-    cg_ai_model = "gpt-4.1-nano"
+    
+    sapar_ai_model = "gpt-4.1-nano"
+    cg_ai_model = "gpt-4.1-mini"
+    
     extractor_model = "gpt-4.1-nano"
     ai_model = 'gpt-4.1-nano'
     player_nums = 6
@@ -56,27 +58,30 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     player_args = []
     for i in range(player_nums):
+        player_mapping[i] = roles[i]
         log_dir = f"{game_output_dir.format(game_idx)}/player {i + 1}"
         create_dir(log_dir)
-        if roles[i] in camp_role:
+        name = f'player {i + 1}'
+        role = roles[i]
+        if role.startswith("Loyal Servant"):
+            role = "Loyal Servant"
+        if role in camp_role:
             if game_idx == 0:
-                role_strategy = init_strategies[roles[i]]
+                role_strategy = init_strategies[role]
                 other_strategy = "None"
                 suggestion = "None"
             else:
-                load_file = f"{game_output_dir.format(game_idx - 1)}/{roles[i]}_reflection.json"
+                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
                 experience = read_json(load_file)
                 role_strategy = experience.get("strategy", "None")
                 other_strategy = experience.get("other_strategy", "None")
                 suggestion = experience.get("suggestion", "None")
-            name = f'player {i + 1}'
-            role = roles[i]
             role_system_prompt = system_prompt.format(name=name, role=role, strategy=role_strategy,
                                                       suggestion=suggestion, other_strategy=other_strategy)
             player_args.append(
                 (
-                    SAPARAgent, {"name": name, "role": role, "role_intro": role_introduction[roles[i].lower()],
-                                 "game_goal": role_target[roles[i]], "strategy": role_strategy,
+                    SAPARAgent, {"name": name, "role": role, "role_intro": role_introduction[role.lower()],
+                                 "game_goal": role_target[role], "strategy": role_strategy,
                                  "system_prompt": role_system_prompt, "summary_prompt": summary_prompt,
                                  "analysis_prompt": analysis_prompt, "plan_prompt": plan_prompt,
                                  "action_prompt": action_prompt, "response_prompt": response_prompt, "model": sapar_ai_model,
@@ -91,10 +96,8 @@ def run_game(game_output_dir: str, camp, game_idx):
             if game_idx == 0:
                 previous_exp_pool = []
             else:
-                load_file = f"{game_output_dir.format(game_idx - 1)}/{roles[i]}_reflection.json"
+                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
                 previous_exp_pool = read_json(load_file)
-            name = f"player {i + 1}"
-            role = roles[i]
             player_args.append(
                 (
                     CGAgent, {"name": name, "role": role, "rule_role_prompt": rule_role_prompt,
@@ -105,12 +108,38 @@ def run_game(game_output_dir: str, camp, game_idx):
                               "extract_suggestion_prompt": extract_suggestion_prompt,
                               "generate_response_prompt": generate_response_prompt,
                               "informativeness_prompt": informativeness_prompt,
-                              "question_list": question_list.get(roles[i], []), "retrival_model": bert_model,
+                              "question_list": question_list.get(role, []), "retrival_model": bert_model,
                               "model": cg_ai_model, "freshness_k": 15, "informativeness_n": 15, "experience_window": 50,
                               "temperature": 0.3, "api_key": "", "previous_exp_pool": previous_exp_pool,
                               "output_dir": log_dir}
                 )
             )
+            # if game_idx == 0:
+            #     role_strategy = init_strategies[role]
+            #     other_strategy = "None"
+            #     suggestion = "None"
+            # else:
+            #     load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
+            #     experience = read_json(load_file)
+            #     role_strategy = experience.get("strategy", "None")
+            #     other_strategy = experience.get("other_strategy", "None")
+            #     suggestion = experience.get("suggestion", "None")
+            # role_system_prompt = system_prompt.format(name=name, role=role, strategy=role_strategy,
+            #                                           suggestion=suggestion, other_strategy=other_strategy)
+            # player_args.append(
+            #     (
+            #         SAPARAgent, {"name": name, "role": role, "role_intro": role_introduction[role.lower()],
+            #                      "game_goal": role_target[role], "strategy": role_strategy,
+            #                      "system_prompt": role_system_prompt, "summary_prompt": summary_prompt,
+            #                      "analysis_prompt": analysis_prompt, "plan_prompt": plan_prompt,
+            #                      "action_prompt": action_prompt, "response_prompt": response_prompt, "model": cg_ai_model,
+            #                      "temperature": 0.3,
+            #                      "api_key": None, "output_dir": log_dir, "suggestion_prompt": suggestion_prompt,
+            #                      "strategy_prompt": strategy_prompt, "update_prompt": update_prompt,
+            #                      "suggestion": suggestion,
+            #                      "other_strategy": other_strategy, "candidate_actions": candidate_actions}
+            #     )
+            # )
 
     game.add_players(player_args)
 
