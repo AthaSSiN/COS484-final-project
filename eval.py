@@ -82,7 +82,7 @@ def causal_lm_collator(features):
 
 
 def main():
-    peft_model_path = "./gpt2"
+    peft_model_path = "./prefix_gpt2_dart/checkpoint‑epoch5"  # Path to your PEFT model
 
     # ------------------------------
     # Load PEFT config & base model

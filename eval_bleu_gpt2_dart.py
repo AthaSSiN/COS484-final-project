@@ -45,6 +45,10 @@ def parse_args():
 
 @torch.inference_mode()
 def main():
+    # initialize a random seed
+    torch.manual_seed(42)
+    torch.cuda.manual_seed(42)
+
     args = parse_args()
     device = torch.device(args.device if torch.cuda.is_available() and args.device.startswith("cuda") else "cpu")
 
@@ -52,9 +56,11 @@ def main():
     # Model & tokenizer
     # ---------------------------------------------------------------------
     print("Loading tokenizer and PEFT checkpoint…")
-    args.checkpoint_dir = "./prefix_gpt2_dart/checkpoint‑epoch5"
+    # args.checkpoint_dir = "./prefix_gpt2_dart/checkpoint‑epoch5"
+    args.checkpoint_dir = "./prefix_gpt2_dart_2/checkpoint‑epoch5"
+
     tokenizer = AutoTokenizer.from_pretrained(args.checkpoint_dir)
-    tokenizer.padding_side = "left"
+    # tokenizer.padding_side = "left"
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 

@@ -23,6 +23,7 @@ from peft import (
     PrefixTuningConfig,
     get_peft_model,
 )
+from peft import PeftModel
 
 # ---------------------------------------------------------------------------
 # hyper‑parameters & paths
@@ -31,14 +32,18 @@ from peft import (
 DEVICE         = "cuda" if torch.cuda.is_available() else "cpu"
 MODEL_NAME     = "gpt2-medium"
 DATASET_NAME   = "GEM/dart"
-OUTPUT_DIR     = "./prefix_gpt2_dart"
+OUTPUT_DIR     = "./prefix_gpt2_dart_2"
 MAX_SOURCE_LEN = 512
 MAX_TARGET_LEN = 128
 LR             = 1e-2
 NUM_EPOCHS     = 5
-BATCH_SIZE     = 2  # GPT‑2‑medium is memory‑hungry; adjust to your GPU
+BATCH_SIZE     = 32  # GPT‑2‑medium is memory‑hungry; adjust to your GPU
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["TRANSFORMERS_CACHE"] = "./hf_cache"
+os.environ["HF_HOME"] = "./hf_cache"
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 # ---------------------------------------------------------------------------
 # helper
@@ -58,14 +63,24 @@ if tokenizer.pad_token is None:
 
 base_model = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
 base_model.resize_token_embeddings(len(tokenizer))
+base_model.config.use_cache = False        # training needs cache disabled
 
 peft_cfg = PrefixTuningConfig(
     task_type=TaskType.CAUSAL_LM,
     inference_mode=False,
     num_virtual_tokens=20,
 )
-model = get_peft_model(base_model, peft_cfg).to(DEVICE)
+model = get_peft_model(base_model, peft_cfg)
+
+# load model weights from checkpoint (if available)
+checkpoint_path = os.path.join('./prefix_gpt2_dart', "checkpoint‑epoch5")
+if os.path.exists(checkpoint_path):
+    print(f"Loading model from checkpoint: {checkpoint_path}")
+    model = PeftModel.from_pretrained(base_model, checkpoint_path)
+
+model = model.to(DEVICE)
 model.print_trainable_parameters()
+
 
 # ---------------------------------------------------------------------------
 # data
