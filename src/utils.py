@@ -18,7 +18,7 @@ def print_text_animated(text):
     # print(text)
     for char in text:
         print(char, end="", flush=True)
-        time.sleep(0.02)
+        # time.sleep(0.02)
 
 
 # COLOR = [Fore.BLUE, Fore.GREEN, Fore.YELLOW, Fore.RED, Fore.LIGHTGREEN_EX, Fore.CYAN]
