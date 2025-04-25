@@ -58,10 +58,10 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     player_args = []
     for i in range(player_nums):
-        player_mapping[i] = roles[i]
         log_dir = f"{game_output_dir.format(game_idx)}/player {i + 1}"
         create_dir(log_dir)
         name = f'player {i + 1}'
+        player_mapping[name] = roles[i]
         role = roles[i]
         if role.startswith("Loyal Servant"):
             role = "Loyal Servant"
@@ -71,7 +71,7 @@ def run_game(game_output_dir: str, camp, game_idx):
                 other_strategy = "None"
                 suggestion = "None"
             else:
-                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
+                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[name]}_reflection.json"
                 experience = read_json(load_file)
                 role_strategy = experience.get("strategy", "None")
                 other_strategy = experience.get("other_strategy", "None")
@@ -96,7 +96,7 @@ def run_game(game_output_dir: str, camp, game_idx):
             if game_idx == 0:
                 previous_exp_pool = []
             else:
-                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
+                load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[name]}_reflection.json"
                 previous_exp_pool = read_json(load_file)
             player_args.append(
                 (
@@ -119,7 +119,7 @@ def run_game(game_output_dir: str, camp, game_idx):
             #     other_strategy = "None"
             #     suggestion = "None"
             # else:
-            #     load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[i]}_reflection.json"
+            #     load_file = f"{game_output_dir.format(game_idx - 1)}/{player_mapping[name]}_reflection.json"
             #     experience = read_json(load_file)
             #     role_strategy = experience.get("strategy", "None")
             #     other_strategy = experience.get("other_strategy", "None")
@@ -174,7 +174,10 @@ def run_game(game_output_dir: str, camp, game_idx):
                         quest_extractor=extractor_args[2],
                         choose_identify_extractor=extractor_args[3], select_merlin_extractor=extractor_args[4])
     game.start()
+    # print(player_mapping)
     for player_i, agent_i in game.players.items():
+        # print(player_i)
+        print("writing reflection to file: ", f"{game_output_dir.format(game_idx)}/{player_mapping.get(player_i)}_reflection.json")
         if isinstance(agent_i, (SAPARAgent, CGAgent)):
             agent_i.reflection(
                 player_mapping,
