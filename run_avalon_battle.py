@@ -40,6 +40,9 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     mode = 'watch'
     language = 'english'
+    sapar_ai_model = "gpt-4o-mini"
+    cg_ai_model = "gpt-4.1-nano"
+    extractor_model = "gpt-4.1-nano"
     ai_model = 'gpt-4.1-nano'
     player_nums = 6
     player_mapping = {}
@@ -76,7 +79,7 @@ def run_game(game_output_dir: str, camp, game_idx):
                                  "game_goal": role_target[roles[i]], "strategy": role_strategy,
                                  "system_prompt": role_system_prompt, "summary_prompt": summary_prompt,
                                  "analysis_prompt": analysis_prompt, "plan_prompt": plan_prompt,
-                                 "action_prompt": action_prompt, "response_prompt": response_prompt, "model": ai_model,
+                                 "action_prompt": action_prompt, "response_prompt": response_prompt, "model": sapar_ai_model,
                                  "temperature": 0.3,
                                  "api_key": None, "output_dir": log_dir, "suggestion_prompt": suggestion_prompt,
                                  "strategy_prompt": strategy_prompt, "update_prompt": update_prompt,
@@ -103,7 +106,7 @@ def run_game(game_output_dir: str, camp, game_idx):
                               "generate_response_prompt": generate_response_prompt,
                               "informativeness_prompt": informativeness_prompt,
                               "question_list": question_list.get(roles[i], []), "retrival_model": bert_model,
-                              "model": ai_model, "freshness_k": 15, "informativeness_n": 15, "experience_window": 50,
+                              "model": cg_ai_model, "freshness_k": 15, "informativeness_n": 15, "experience_window": 50,
                               "temperature": 0.3, "api_key": "", "previous_exp_pool": previous_exp_pool,
                               "output_dir": log_dir}
                 )
@@ -113,27 +116,27 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     # extractors
     extractor_args = [(ChatGPTBasedExtractor,
-                       {"extractor_name": "player extractor", "model_name": 'gpt-3.5-turbo-16k',
+                       {"extractor_name": "player extractor", "model_name": extractor_model,
                         "extract_prompt": number_extract_prompt, "system_prompt": "You are a helpful assistant.",
                         "temperature": 0, "few_shot_demos": player_extractor_demos,
                         "output_dir": game_output_dir.format(game_idx)}),
                       (ChatGPTBasedExtractor,
-                       {"extractor_name": "vote extractor", "model_name": 'gpt-3.5-turbo-16k',
+                       {"extractor_name": "vote extractor", "model_name": extractor_model,
                         "extract_prompt": bool_extract_prompt, "system_prompt": "You are a helpful assistant.",
                         "temperature": 0, "few_shot_demos": vote_extractor_demos,
                         "output_dir": game_output_dir.format(game_idx)}),
                       (ChatGPTBasedExtractor,
-                       {"extractor_name": "quest extractor", "model_name": 'gpt-3.5-turbo-16k',
+                       {"extractor_name": "quest extractor", "model_name": extractor_model,
                         "extract_prompt": quest_extract_prompt, "system_prompt": "You are a helpful assistant.",
                         "temperature": 0, "few_shot_demos": quest_extractor_demos,
                         "output_dir": game_output_dir.format(game_idx)}),
                       (ChatGPTBasedExtractor,
-                       {"extractor_name": "identify extractor", "model_name": 'gpt-3.5-turbo-16k',
+                       {"extractor_name": "identify extractor", "model_name": extractor_model,
                         "extract_prompt": bool_extract_prompt, "system_prompt": "You are a helpful assistant.",
                         "temperature": 0, "few_shot_demos": choose_identify_extractor_demos,
                         "output_dir": game_output_dir.format(game_idx)}),
                       (ChatGPTBasedExtractor,
-                       {"extractor_name": "merlin extractor", "model_name": 'gpt-3.5-turbo-16k',
+                       {"extractor_name": "merlin extractor", "model_name": extractor_model,
                         "extract_prompt": number_extract_prompt, "system_prompt": "You are a helpful assistant.",
                         "temperature": 0, "few_shot_demos": select_merlin_extractor_demos,
                         "output_dir": game_output_dir.format(game_idx)})]

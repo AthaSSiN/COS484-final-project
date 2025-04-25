@@ -70,6 +70,7 @@ class CGAgent(Agent):
 
         self.api_key = api_key
         self.output_dir = output_dir
+        print("Using model", self.model, "for CGAGENT with role", self.role)
 
     def step(self, message: str) -> str:
         phase = message.split("|")[0]
@@ -370,6 +371,7 @@ class SAPARAgent(Agent):
 
         self.T = 3
         self.candidate_actions = candidate_actions
+        print("Using model", self.model, "for SAPAR with role", self.role)
 
     def step(self, message: str) -> str:
         """
