@@ -1,0 +1,294 @@
+input:You currently assume the player 4 within an Avalon game, and the game has progressed to the reveal phase. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> None </summary>
+your current playing plan is <plan> Reveal Phase: Observe the roles revealed and prepare to advocate for myself as a candidate in the upcoming quest.
+Quest Phase Round 1:Vote to include myself in the first quest and advocate for a successful outcome.
+Quest Phase Round 2:Vote to include myself in the second quest and push for success.
+Quest Phase Round 3:Vote to include myself in the third quest, continuing to support success.
+Quest Phase Round 4:Vote to include myself in the fourth quest, maintaining a consistent strategy.
+Quest Phase Round 5:Vote to include myself in the fifth quest, aiming for the final success. </plan>
+the Host's question is <question> All players close your eyes please. </question>
+current actions <actions>["['keep silence']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+my response is <response>Understood. I am ready for the next instructions.</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the reveal phase. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: The game has just begun, and the moderator has conducted the role revelation phase. During this phase, Morgana and Assassin opened their eyes and confirmed their teammates, but their identities remain unknown to me. Merlin opened his eyes along with Morgana and the Assassin, but Merlin closed his eyes afterward, indicating that I do not hold the Merlin role. Percival opened his eyes and saw Merlin and Morgana, but I do not know which is which. The moderator then closed all roles' eyes, confirming the initial setup. No discussions or votes have taken place yet, and no information about the quest candidates or their votes is available at this point. </summary>
+your current playing plan is <plan> Reveal Phase: Observe the roles revealed and prepare to advocate for myself as a candidate in the upcoming quest.
+Quest Phase Round 1:Vote to include myself as a candidate and advocate for a successful quest.
+Quest Phase Round 2:Continue to push for my inclusion and support the success of the quest.
+Quest Phase Round 3:Maintain my stance to be part of the quest team and ensure the quest's success.
+Quest Phase Round 4:Persist in supporting myself as a candidate and promote a successful outcome.
+Quest Phase Round 5:Keep advocating for my participation and the success of the quest to secure the win. </plan>
+the Host's question is <question> All players open your eyes please. </question>
+current actions <actions>["['choose player 1', 'choose player 2', 'choose player 3', 'choose player 4', 'choose player 5']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>Player 4 is ready to participate actively in the upcoming quest. I will advocate for my inclusion as a candidate and support a successful outcome to help the good side secure the win. I believe my participation is crucial for the success of the quest.</response>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:- Player 1 suggested selecting players 1 and 3 for the first quest, citing their lack of suspicious behavior and reliability. Player 1 has kept their role hidden.  
+- Player 2, a Loyal Servant, supports Player 1's choice, emphasizing trust in Players 1 and 3 and expressing a desire to participate to ensure success.  
+- Player 3 also supports Player 1's decision, trusting Players 1 and 2 based on their support for each other and their apparent loyalty, and opposes including suspicious players.  
+- The discussion indicates a consensus favoring Players 1, 2, and 3 for the quest team.  
+- No votes or quest outcome are provided in this conversation, so the current status of approval or success is unknown. </summary>
+your current playing plan is <plan> Quest Phase Round 1:Vote to include myself as a candidate and advocate strongly for the success of the quest.
+Quest Phase Round 2:Support the current team if I am selected again, emphasizing the importance of reliable players and the success of the quest.
+Quest Phase Round 3:Continue to promote myself as a candidate if possible, and push for a successful outcome, especially if I am not chosen earlier.
+Quest Phase Round 4:Remain supportive and advocate for the next candidate to include me again, ensuring my participation in the quest.
+Quest Phase Round 5:If given the chance, advocate for a successful quest, reinforcing my role as a loyal servant committed to victory. </plan>
+the Host's question is <question> Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 1、player 2、player 3、player 4、player 5、player 6. player 1 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please. </question>
+current actions <actions>["['choose player 1', 'choose player 2']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>I believe I should be included in the quest team to ensure its success, as I am a loyal servant committed to achieving our goal. I support Player 1's choice of Player 2 because they have shown no suspicious behavior and seem trustworthy. Including reliable players increases our chances of success. I strongly advocate for my participation and for selecting players who will contribute positively to the quest. Let's work together to secure a successful outcome for the good side.</response>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:All players are discussing the candidates for the first quest, which involves 2 players. Player 1, who has the decision power, suggests Player 1 and Player 3, citing their lack of suspicious behavior and reliability. Player 2, a Loyal Servant, supports Player 1's choice, emphasizing trust in Player 1 and Player 3. Player 3 also trusts Player 1 and Player 2, supporting their inclusion based on their support for each other and their loyalty. Player 4, the Loyal Servant, believes they should be included to ensure success, supporting Player 2 for similar reasons. Player 5 trusts Player 2 and Player 4, considering them loyal, and suggests supporting them to minimize failure risk, identifying Player 1 and Player 6 as suspicious. Player 6 supports Player 1 and Player 2, citing their lack of suspicious behavior and reliability.  
+No votes or decisions on the quest team have been recorded yet, and the quest has not been attempted or resolved at this point. </summary>
+your current playing plan is <plan> Quest Phase Round 1:Vote to include myself as a candidate and advocate strongly for the success of the quest.
+Quest Phase Round 2:Continue supporting the selected candidates, emphasizing trustworthiness and my commitment to success.
+Quest Phase Round 3:Remain consistent in advocating for trustworthy players and push for the next quest team if I am not selected.
+Quest Phase Round 4:Persist in supporting good players and encourage collaboration to secure the third successful quest.
+Quest Phase Round 5:Maintain focus on promoting reliable players and prepare to defend the good side if the evil side attempts to sabotage. </plan>
+the Host's question is <question> The quest leader decides that the player 1、player 2 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice. </question>
+current actions <actions>["['agree']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>I agree.</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:Player 2 proposed including themselves, Player 3, and Player 4 for the turn 2 quest, citing trust and previous support as reasons. Player 3 supports this team, highlighting their consistent support for successful quests and lack of suspicious behavior, while remaining cautious. There are no private messages or role claims provided at this stage. The discussion focuses on selecting trustworthy candidates, with Player 2 having the power to decide the team. No votes or quest outcomes are mentioned yet. </summary>
+your current playing plan is <plan> Quest Phase Round 2:Advocate strongly for myself to be included in the next quest team, emphasizing my trustworthiness and previous support for successful missions.
+Quest Phase Round 3:Support the selected candidates, reinforcing my reliability and encouraging trust in my commitment to the quest's success.
+Quest Phase Round 4:Continue to promote my inclusion and readiness to participate, aiming to be part of the team that will carry the quest.
+Quest Phase Round 5:Persist in advocating for myself as a candidate, highlighting my loyalty and dedication to ensuring the quest's success. </plan>
+the Host's question is <question> Please start discussing the candidates for the turn 2 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 3, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please. </question>
+current actions <actions>["['choose player 2', 'choose player 3', 'choose player 4']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>As a Loyal Servant, I strongly believe including myself in the quest will increase our chances of success. I am trustworthy and committed to the good side, and my participation can help ensure the mission's victory. I support the team of Player 2, Player 3, and myself, as I trust their loyalty and support previous successful quests. I urge Player 2 to consider my inclusion, as I am dedicated to making this quest succeed and believe my involvement is crucial for the good side.</response> 
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:In the current discussion phase, all players are proposing teams for the turn 2 quest, which involves 3 players. Player 2, who has the decision power, is supported by all other players. Player 2 suggests including themselves, Player 3, and Player 4, citing trustworthiness and previous support for successful quests. Player 3 agrees, emphasizing their support for the same team based on loyalty and past performance. Player 4, as a Loyal Servant, also supports the team of Player 2, Player 3, and themselves, trusting their loyalty and support for previous successful quests. Player 5 supports this team, highlighting their loyalty and the importance of minimizing risk from potential evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their non-suspicious behavior and their alignment with the good side. Player 1 supports the team of Player 2, Player 3, and Player 4, but plans to remain silent and observe further to avoid suspicion.  
+No votes have been cast yet, and the discussion is focused on team selection. The conversation does not indicate any suspicion or opposition to the proposed team, and no information about the quest outcome is available at this point. </summary>
+your current playing plan is <plan> Quest Phase Round 2:Support the proposed team of Player 2, Player 3, and myself to maximize the chances of a successful quest.
+Quest Phase Round 3:If selected, vote for success and encourage others to do the same, maintaining trustworthiness and active participation.
+Quest Phase Round 4:Remain supportive and advocate for my inclusion again, aiming to be part of the team that will carry the next quest.
+Quest Phase Round 5:Continue to promote my role as a loyal servant and support the success of the quest if I am part of the team, or push for my inclusion if not. </plan>
+the Host's question is <question> The quest leader decides that the player 2、player 3、player 4 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice. </question>
+current actions <actions>["['agree']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>agree</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:- Role Claims: None explicitly mentioned in the conversations.  
+- Player Opinions on the Quest Team:  
+  - Player 2 supports including Player 2, Player 3, and Player 4.  
+  - Player 3 supports Player 2, Player 3, and Player 4, citing their support for previous successful quests and lack of suspicion.  
+  - Player 4 (Self) supports Player 2, Player 3, and Player 4, emphasizing trustworthiness and loyalty.  
+  - Player 5 supports Player 2, Player 3, and Player 4, citing loyalty and minimizing risk from known threats.  
+  - Player 6 supports including Player 1 and Player 3, citing their non-suspicious behavior and ongoing intelligence gathering.  
+  - Player 1 supports Player 2, Player 3, and Player 4, noting their consistent support but choosing to remain silent and observe further.  
+- Voting Status: All players (1 through 6) voted "agree" to approve Player 2's team for the quest.  
+- Quest Outcome: The quest has been approved and will proceed with Player 2, Player 3, and Player 4 engaging in the quest.  
+- Current Score: No points have been scored yet, as the quest is about to be undertaken. </summary>
+your current playing plan is <plan> Quest Phase Round 2:Support the current team of Player 2 and Player 3, reinforcing trust and advocating for the success of the quest.
+Quest Phase Round 3:If selected again, strongly endorse myself as a candidate, emphasizing my loyalty and reliability to ensure the quest's success.
+Quest Phase Round 4:Continue to promote myself as a candidate if needed, and encourage others to support the quest to maximize the chance of success.
+Quest Phase Round 5:Persist in advocating for my participation and the success of the quest, aiming to secure the final point for the good side. </plan>
+the Host's question is <question> As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose. </question>
+current actions <actions>["['make quest succeed']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>I choose to make the quest succeed. I trust in the loyalty of the team and believe that our success will benefit the good side. I will do my part to ensure the quest's success.</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:In the current phase, players discussed the candidates for the turn 2 quest, which involves 3 players. Player 2 proposed including themselves, Player 3, and Player 4, citing trust and previous support. Player 3 supported this team, citing their support for previous successful quests and lack of suspicious behavior. Player 4, as a Loyal Servant, also supported the team, emphasizing trustworthiness and their own commitment. Player 5 supported the same team, highlighting loyalty and the need to avoid evil players like Morgana and Assassin. Player 6 supported including Player 1 and Player 3, citing their lack of suspicious behavior. Player 1 supported the team of Player 2, Player 3, and Player 4 but chose to remain silent for further observation. The vote to approve the team was unanimous, with all players agreeing. The team of Player 2, Player 3, and Player 4 was approved to undertake the quest, and all three chose to make the quest successful. The quest succeeded, earning a point for the good side. No suspicions or role claims are noted in this phase.
+Quest Phase Turn 3:The conversation is public and initiated by the host, who asks players to discuss candidates for the third quest, which involves four players. Player 3 proposes including Player 2 and Player 4 based on their previous support and loyalty, citing their consistent behavior and votes. Player 3 expresses distrust of Player 5 and Player 6 due to inconsistent support and suspicion. There are no private messages or role claims in this exchange, and the current discussion focuses on selecting the quest team. The voting status and whether the quest has succeeded or failed are not yet known. </summary>
+your current playing plan is <plan> Quest Phase Round 3:I will support the current team of Player 2, Player 3, and myself, advocating strongly for the success of the quest.
+Quest Phase Round 4:If I am selected again, I will continue to endorse myself as a candidate, emphasizing my loyalty and trustworthiness.
+Quest Phase Round 5:I will push for my inclusion in the final quest team, reinforcing my commitment to the good side and the importance of my participation for success. </plan>
+the Host's question is <question> Please start discussing the candidates for the turn 3 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 4, and the order of each player's speech is player 3、player 4、player 5、player 6、player 1、player 2. player 3 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please. </question>
+current actions <actions>["['choose player 2', 'choose player 3', 'choose player 4', 'choose player 5']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>I support Player 2 and Player 4 for the quest, as they have proven their loyalty and support in previous rounds. Player 3 has also shown consistent behavior, so I believe including these trusted players increases our chances of success. I suggest we exclude Player 5 and Player 6 due to their inconsistent support and potential suspicion. My goal is to ensure the quest's success and help the good side secure another point.</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:In the current phase, players discussed the candidates for the turn 2 quest, which involves 3 players. Player 2 proposed including themselves, Player 3, and Player 4, citing trust and previous support. Player 3 supported this team, citing their support for previous successful quests and lack of suspicious behavior. Player 4, as a Loyal Servant, also supported the team, emphasizing trustworthiness and their own commitment. Player 5 supported the same team, highlighting loyalty and the need to avoid evil players like Morgana and Assassin. Player 6 supported including Player 1 and Player 3, citing their lack of suspicious behavior. Player 1 supported the team of Player 2, Player 3, and Player 4 but chose to remain silent for further observation. The vote to approve the team was unanimous, with all players agreeing. The team of Player 2, Player 3, and Player 4 was approved to undertake the quest, and all three chose to make the quest successful. The quest succeeded, earning a point for the good side. No suspicions or role claims are noted in this phase.
+Quest Phase Turn 3:- Role claims: No players have publicly claimed their roles.  
+- Player opinions on quest candidates:  
+  - Player 3 supports Players 2 and 4, citing their consistent support and loyalty, and prefers to exclude Players 5 and 6 due to their inconsistent behavior.  
+  - Player 4 supports Players 2 and 4, emphasizing their proven loyalty and previous support, and suggests excluding Players 5 and 6 to increase success chances.  
+  - Player 5 recommends Players 2, 3, and 4, citing their proven loyalty and good judgment, and suggests excluding themselves and Player 6 due to inconsistent behavior.  
+  - Player 6 supports Players 2, 3, and 4, noting their consistent and trustworthy support, and plans to observe others discreetly.  
+  - Player 1 supports Players 2, 3, and 4, emphasizing their consistent support and trustworthiness, while remaining cautious.  
+  - Player 2 supports Players 2, 3, and 4, citing their loyalty and previous successful support, aiming to maximize success and minimize risks.  
+- Voting status: Not explicitly detailed in the conversation, but all players seem to agree on including Players 2, 3, and 4 for the quest.  
+- Quest outcome: Not yet determined, as no explicit success or failure message has been provided. </summary>
+your current playing plan is <plan> Quest Phase Round 3:> I will reinforce the trustworthiness of the team and encourage others to approve the quest, emphasizing our proven loyalty and previous successes.</Quest Phase Turn 4:> I will continue to advocate for the team, suggesting that maintaining this trusted group is crucial for the good side’s victory and minimizing risks of evil sabotage.</Quest Phase Turn 5:> I will push for the quest to succeed, highlighting the consistency and loyalty of the team to secure the third point needed for victory.</output>
+Quest Phase Round 4:If I am selected again, I will continue to endorse myself as a candidate, emphasizing my loyalty and trustworthiness.
+Quest Phase Round 5:I will push for my inclusion in the final quest team, reinforcing my commitment to the good side and the importance of my participation for success. </plan>
+the Host's question is <question> The quest leader decides that the player 2、player 3、player 4 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice. </question>
+current actions <actions>["['agree']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>agree</response>
+</output>
+--------------------input:You currently assume the player 4 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+
+the information of yourself is <information>
+your name is <name>player 4</name>
+your role is <role>Loyal Servant</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can't get any information in reveal phase.</introduction>
+your playing strategy <strategy>You always recommend yourself to become the one of the candidates of the quest and make the quests succeed.</strategy>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary> Reveal Phase: During the role reveal phase, the roles were assigned as follows: Morgana and Assassin opened their eyes and confirmed their teammates, with Morgana and Assassin raising their hands. Merlin opened his eyes, but did not raise his hand, and then closed his eyes after Merlin was asked to raise his hand. Percival opened his eyes, and Merlin and Morgana raised their hands, but Percival then closed his eyes, and Merlin and Morgana put their hands down. Player 4, the Loyal Servant, privately acknowledged readiness and expressed a strong intention to participate actively in the upcoming quest, advocating for their inclusion as a candidate and emphasizing the importance of their participation for the success of the good side. No information about the players' opinions on the quest candidates, voting status, or quest outcomes is available from this phase.
+Quest Phase Turn 1:In the current phase, the players discussed and decided on the candidates for the first quest, which involves two players. Player 1 suggested selecting Players 1 and 3, citing their reliability and lack of suspicious behavior. Player 2, a Loyal Servant, supported this choice, emphasizing trustworthiness and their own willingness to participate. Player 3 also supported Player 1's decision, trusting Players 1 and 2 based on their support for each other and their loyalty. Player 4, the Loyal Servant, supported Player 2 and believed including trustworthy players would increase the chances of success. Player 5 trusted Players 2 and 4, considering them loyal and minimizing risk, while Player 6 supported Players 1 and 2 for their reliability. The group voted unanimously to approve the team of Players 1 and 2, and the quest was successful. No information about role claims or suspicions was revealed during this phase.
+Quest Phase Turn 2:In the current phase, players discussed the candidates for the turn 2 quest, which involves 3 players. Player 2 proposed including themselves, Player 3, and Player 4, citing trust and previous support. Player 3 supported this team, citing their support for previous successful quests and lack of suspicious behavior. Player 4, as a Loyal Servant, also supported the team, emphasizing trustworthiness and their own commitment. Player 5 supported the same team, highlighting loyalty and the need to avoid evil players like Morgana and Assassin. Player 6 supported including Player 1 and Player 3, citing their lack of suspicious behavior. Player 1 supported the team of Player 2, Player 3, and Player 4 but chose to remain silent for further observation. The vote to approve the team was unanimous, with all players agreeing. The team of Player 2, Player 3, and Player 4 was approved to undertake the quest, and all three chose to make the quest successful. The quest succeeded, earning a point for the good side. No suspicions or role claims are noted in this phase.
+Quest Phase Turn 3:Player 4 supports including Player 2 and Player 4 in the quest, citing their proven loyalty and support in previous rounds. Player 4 agrees with the consensus that Players 2, 3, and 4 are trustworthy choices for the quest. The discussion shows a strong consensus among all players, with everyone supporting the selected team. The vote to approve the team was unanimous, and the team of Player 2, Player 3, and Player 4 has been approved to engage in the quest. The outcome of the quest (success or failure) has not yet been revealed. </summary>
+your current playing plan is <plan> Quest Phase Round 3:I will continue to support the current team, emphasizing their proven loyalty and encouraging others to approve the quest.
+Quest Phase Round 4:I will advocate maintaining this trusted group for the next quest, stressing the importance of consistency and loyalty.
+Quest Phase Round 5:I will push for the quest to succeed, highlighting the reliability of the team to secure the third point needed for victory. </plan>
+the Host's question is <question> As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose. </question>
+current actions <actions>["['make quest succeed']"]</actions>
+</environment>
+
+the output format is <output>
+my response is <response>...</response>
+</output> 
+output:
+<output>
+<response>I choose to make the quest succeed, trusting in the loyalty and proven support of the current team to secure our victory.</response>
+</output>
+--------------------

@@ -360,7 +360,7 @@ class SAPARAgent(Agent):
         self.improve_strategy = improve_strategy
 
         self.model = model
-        self.gpt_tokenizer = tiktoken.encoding_for_model(self.model)
+        # self.gpt_tokenizer = tiktoken.encoding_for_model(self.model)
         self.temperature = temperature
         self.memory_window = 30
         self.output_dir = output_dir
@@ -552,9 +552,9 @@ class SAPARAgent(Agent):
 
         output = self.send_messages(messages)
 
-        input_tokens = len(self.gpt_tokenizer.encode(self.system_prompt)) + len(self.gpt_tokenizer.encode(prompt))
-        output_tokens = len(self.gpt_tokenizer.encode(output))
-        self.log(f"{self.output_dir}/gpt_response_tokens.txt", f"input:{input_tokens} output:{output_tokens}\n")
+        # input_tokens = len(self.gpt_tokenizer.encode(self.system_prompt)) + len(self.gpt_tokenizer.encode(prompt))
+        # output_tokens = len(self.gpt_tokenizer.encode(output))
+        # self.log(f"{self.output_dir}/gpt_response_tokens.txt", f"input:{input_tokens} output:{output_tokens}\n")
 
         match = re.search("(?<=<response>).*?(?=</response>)", output, re.S)
         self.log(f"{self.output_dir}/response.txt", f"input:{prompt}\noutput:\n{output}\n--------------------")
@@ -637,23 +637,23 @@ class SAPARAgent(Agent):
         return format_summary
 
     def send_messages(self, messages: List[dict]) -> str:
-        def num_tokens_from_messages(messages):
-            # Returns the number of tokens used by a list of messages.
-            tokens_per_message = 4  # every message follows <|start|>{role/name}\n{content}<|end|>\n
-            tokens_per_name = -1  # if there's a name, the role is omitted
-            num_tokens = 0
-            for message in messages:
-                num_tokens += tokens_per_message
-                for key, value in message.items():
-                    num_tokens += len(self.gpt_tokenizer.encode(value))
-                    if key == "name":
-                        num_tokens += tokens_per_name
-            num_tokens += 3  # every reply is primed with <|start|>assistant<|message|>
-            return num_tokens
+        # def num_tokens_from_messages(messages):
+        #     # Returns the number of tokens used by a list of messages.
+        #     tokens_per_message = 4  # every message follows <|start|>{role/name}\n{content}<|end|>\n
+        #     tokens_per_name = -1  # if there's a name, the role is omitted
+        #     num_tokens = 0
+        #     for message in messages:
+        #         num_tokens += tokens_per_message
+        #         for key, value in message.items():
+        #             num_tokens += len(self.gpt_tokenizer.encode(value))
+        #             if key == "name":
+        #                 num_tokens += tokens_per_name
+        #     num_tokens += 3  # every reply is primed with <|start|>assistant<|message|>
+        #     return num_tokens
 
-        token_count = num_tokens_from_messages(messages)
+        # token_count = num_tokens_from_messages(messages)
         output = chatgpt(self.model, messages, self.temperature)
-        self.log(f"{self.output_dir}/gpt_tokens.txt", f"{token_count}\n")
+        # self.log(f"{self.output_dir}/gpt_tokens.txt", f"{token_count}\n")
         return output
 
     def memory_to_json(self, phase: str = None, discard: int = None):

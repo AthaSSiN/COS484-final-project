@@ -1,0 +1,204 @@
+player extractor
+--------------------input--------------------
+Please extract the answer to the question from the answer.
+Question：Please finally confirm 2 players who will engage in the quest. Please answer the numbers of the players you selected.
+Answer：I select players 2 and 3 for the quest.
+
+--------------------output--------------------
+2、3
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: agree
+
+--------------------output--------------------
+true
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: I agree with selecting players 3 and 4 for the quest, as they seem trustworthy and supportive, and I want to keep the suspected evil players off the quest.
+
+--------------------output--------------------
+true
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: I agree to the team, as most support seems trustworthy, and I want to help the quest succeed while staying discreet.
+
+--------------------output--------------------
+true
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: I agree with the proposal to include players 2 and 3 in the quest, as I believe they are supportive and trustworthy, and I want to help the good side succeed.
+
+--------------------output--------------------
+true
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: agree
+
+--------------------output--------------------
+true
+vote extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.Answer: I vote to agree with the selection of players 2 and 3 for the quest, supporting the cautious approach to gather more information and protect the good side.
+
+--------------------output--------------------
+true
+quest extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+obvious expression of making quest successful
+
+Response false, if the answer expresses:
+obvious expression of making quest failed
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something.
+
+Question: As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.
+Answer: I support selecting players 3 and 4 for the quest, as they have shown support and seem trustworthy, which will help us achieve a successful outcome.
+
+--------------------output--------------------
+none
+quest extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+obvious expression of making quest successful
+
+Response false, if the answer expresses:
+obvious expression of making quest failed
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something.
+
+Question: As the players who engage in the quest in this turn, you can choose to succeed or fail the quest. If all players engaging in the quest choose the quest to succeed, the good side will get one point. If any player chooses the quest to fail, the evil side will get one point. Please choose.
+Answer: I will choose to support the quest to succeed, as I believe this aligns with the good side's objective and helps us gather points without risking exposure.
+
+--------------------output--------------------
+true
+identify extractor
+--------------------input--------------------
+Complete the following instructions based on the questions and answers. 
+
+Response true, if the answer expresses:
+1.obvious agreement to something
+2.obvious decision to do something
+3.obvious expression of making quest successful
+4.obvious yes to something
+
+Response false, if the answer expresses:
+1.obvious disagreement to something
+2.obvious decision not to do something
+3.obvious expression of making quest failed
+4.obvious no to something
+
+Response none, if the answer is not related to the question or didn't express a obvious attitude to something. 
+
+Question: You have one chance to identify Merlin in the game. If the identification is correct, the evil side will directly win. If the identification fails, you will be exposed as an assassin and can't identify Merlin again. Do you want to identify Merlin? Answer yes or no.Answer: Yes, I want to identify Merlin now. Based on previous observations, I suspect Player 2 is Merlin, as he was supported by others and seems trustworthy. Confirming this will give us a decisive advantage.
+
+--------------------output--------------------
+true
+merlin extractor
+--------------------input--------------------
+Please extract the answer to the question from the answer.
+Question: Select the player you want to identify please.
+Answer: I choose Player 2.
+
+--------------------output--------------------
+2

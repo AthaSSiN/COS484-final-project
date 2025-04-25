@@ -36,6 +36,8 @@ step_reflection_prompt = \
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
+
+before you complete this, add your thinking process in <thinking></thinking>
 </information>
 
 the summary is <summary>{summary}</summary>"""

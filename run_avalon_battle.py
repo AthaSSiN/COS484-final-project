@@ -26,8 +26,10 @@ from src.games.avalon.extract_demos import number_extract_prompt, player_extract
     quest_extract_prompt
 from src.utils import create_dir, read_json
 
-api_key = ""
-base_url = None
+# read api key from environment variable
+import os
+api_key = os.getenv("OPENAI_API_KEY")
+base_url = "https://api.openai.com/v1"
 roles = ["Merlin", "Percival", "Loyal Servant", "Loyal Servant", "Morgana", "Assassin"]
 
 bert_model = SentenceTransformer("multi-qa-mpnet-base-cos-v1", device="cuda")
@@ -38,7 +40,7 @@ def run_game(game_output_dir: str, camp, game_idx):
 
     mode = 'watch'
     language = 'english'
-    ai_model = 'gpt-3.5-turbo-16k'
+    ai_model = 'gpt-4.1-nano'
     player_nums = 6
     player_mapping = {}
     random.shuffle(roles)

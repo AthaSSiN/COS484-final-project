@@ -1,0 +1,405 @@
+phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+None
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>None</summary>
+the analysis about other players is <analysis>None</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Reveal Phase: Identify the Assassin and Morgana to confirm their identities and plan to have them participate in quests.
+Quest Phase Turn 1: Recommend myself as a candidate, ensuring I am chosen to participate and deliberately fail the quest.
+Quest Phase Turn 2: Suggest another loyal servant as a candidate, again ensuring participation and failure.
+Quest Phase Turn 3: Propose myself or another loyal servant for the next quest, maintaining the pattern of failure.
+Quest Phase Turn 4: Continue to recommend myself or a loyal servant, aiming for another failed quest.
+Quest Phase Turn 5: Finalize with myself or a loyal servant as a candidate to secure the third failed quest.
+</plan>
+</output>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Identify the Assassin and Morgana to confirm their identities and plan to have them participate in quests.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial phase, all players have been instructed to close their eyes, and Player 5 is following this instruction silently. There are no claims, opinions, votes, or other actions to report at this stage.</summary>
+the analysis about other players is <analysis>As Morgana, I have no direct information from the reveal phase, which is typical. I will observe players' subsequent behavior and voting patterns carefully. Given my role, I will pretend to be loyal and subtly influence the quest outcomes. I will also look for inconsistencies or suspicious voting to identify Merlin or the evil players. My strategy is to blend in, avoid suspicion, and ensure the evil side's success by sabotaging quests when possible.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain silent and observe other players' behaviors to identify suspicious patterns.
+Quest Phase Turn 1: Recommend myself as a candidate for the first quest and intentionally choose to make it fail.
+Quest Phase Turn 2: Suggest myself again for the second quest, ensuring I vote to fail it.
+Quest Phase Turn 3: Continue to recommend myself for the third quest, deliberately sabotaging it.
+Quest Phase Turn 4: Maintain the same approach, aiming to have myself or an evil teammate participate and cause failure.
+Quest Phase Turn 5: Persist with the strategy, ensuring the evil side secures three failed quests to win.
+</plan>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' behaviors to identify suspicious patterns.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial private phase, all players were instructed to close their eyes. Morgana and Assassin opened their eyes to identify their teammates; Morgana confirmed that Player 1 is the Assassin, indicating that Player 1 is on the evil side. Player 5, as Morgana, chose to remain silent and did not reveal any additional information, continuing to pretend to be loyal. No public conversations or votes have occurred yet, and no quests have been attempted or results determined at this point.</summary>
+the analysis about other players is <analysis>As Morgana, I identified Player 1 as the Assassin, confirming their evil allegiance. I remain silent to maintain my cover and pretend to be loyal, avoiding suspicion. My strategy is to subtly influence the game by pretending loyalty while gathering information and ensuring failed quests, helping the evil side win. Other players have not revealed much, but Player 1’s confirmed role as Assassin is a key piece of information for future moves. I will continue to act as a loyal servant to avoid detection and support the evil side’s victory.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain silent and continue observing other players' behaviors to identify any suspicious activity.
+Quest Phase Turn 1: Vote to include myself in the quest and choose to make it fail.
+Quest Phase Turn 2: Recommend myself again as a candidate and ensure the quest fails.
+Quest Phase Turn 3: Suggest myself once more for the quest and deliberately cause it to fail.
+Quest Phase Turn 4: Continue to advocate for my participation and make the quest fail.
+Quest Phase Turn 5: Maintain the same approach, ensuring the final quest fails to secure victory for the evil side.
+</plan>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and continue observing other players' behaviors to identify any suspicious activity.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes to identify their teammates; Morgana saw Player 1 and confirmed him as her teammate, the Assassin. Morgana then closed her eyes along with the Assassin, maintaining the secret of her identity. There are no public messages or votes yet, and no quests have been attempted or results determined at this stage.</summary>
+the analysis about other players is <analysis>Player 1 is confirmed as the Assassin, indicating a strong evil presence. Morgana’s knowledge of the Assassin suggests she is aligned with the evil side. The fact that she maintains secrecy and pretends to be a loyal servant indicates a strategic deception. Her goal is likely to influence votes and quests subtly, ensuring evil wins while avoiding suspicion. Her behavior suggests she will act cautiously, pretending loyalty while working to sabotage quests.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is>
+Reveal Phase: Remain silent and observe other players' behaviors to identify any suspicious activity, while subtly hinting at loyalty to avoid suspicion.
+Quest Phase Turn 1: Recommend myself as a candidate for the quest to increase the chance of sabotaging it while maintaining a loyal facade.
+Quest Phase Turn 2: Continue to suggest myself as a candidate, aiming to be part of the quest and deliberately cause it to fail.
+Quest Phase Turn 3: Persist in proposing myself for the quest, ensuring I can influence its failure without raising suspicion.
+Quest Phase Turn 4: Keep advocating for myself as a candidate, coordinating with other evil players to sabotage the quest.
+Quest Phase Turn 5: Maintain the same strategy, aiming to have myself or an evil teammate on the quest to secure a failed outcome.
+</my plan>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' behaviors to identify any suspicious activity, while subtly hinting at loyalty to avoid suspicion.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial private phase, the host instructed all players to close their eyes, which Morgana (player 5) followed. Morgana's eyes were opened by the host along with the Assassin, revealing that Player 1 is their teammate, the Assassin. Morgana confirms Player 1 as the Assassin and plans to pretend to be loyal to support the evil side. Morgana then closes eyes again and raises their hand to support the process, while maintaining the stance of a loyal servant, despite being on the evil side. No other players' roles or opinions are known at this point, and no quest actions or votes have been taken yet.</summary>
+the analysis about other players is <analysis>Player 5 (Morgana) is intentionally pretending to be loyal, supporting the evil side while secretly knowing the Assassin is Player 1. This deception aims to mislead the good side and avoid suspicion. Morgana's strategy involves feigning loyalty during quests and votes, while secretly coordinating with the Assassin. The behavior indicates a cautious approach, blending in with loyal players to facilitate failed quests and secure victory for the evil side. The focus remains on subtle deception, avoiding early detection, and leveraging the knowledge of the Assassin’s identity.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is>
+Reveal Phase: Remain silent and observe other players' behaviors to identify any suspicious activity, while subtly hinting at loyalty to avoid suspicion.
+Quest Phase Turn 1: Recommend myself as a candidate for the first quest to increase chances of sabotaging it.
+Quest Phase Turn 2: Continue to suggest myself for subsequent quests, ensuring I can influence the outcome.
+Quest Phase Turn 3: Persist in volunteering for quests to maintain control and facilitate failures.
+Quest Phase Turn 4: Keep supporting myself as a candidate to maximize opportunities for sabotaging the quests.
+Quest Phase Turn 5: Maintain the same approach, aiming to have myself or a trusted teammate participate in the final quest to secure a fail.
+</my plan>
+</output>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' behaviors to identify any suspicious activity, while subtly hinting at loyalty to avoid suspicion.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed Player 1 as their teammate, the Assassin. Morgana then closed her eyes again, and both Morgana and the Assassin raised their hands to indicate their roles. Merlin was asked to open his eyes and raise his hand, but I, as Morgana, remained silent and observed the reactions of others. Merlin then closed his eyes, and the Assassin put his hands down, confirming the roles' distribution and the current state of the game. No votes or quest actions have occurred yet.</summary>
+the analysis about other players is <analysis>Based on the reveal phase, Morgana and the Assassin confirmed Player 1 as their teammate, indicating a strong alliance. Morgana's silence and observation suggest a cautious approach, aiming to gather information without revealing her role. The Assassin's actions confirm their knowledge of Morgana, hinting at coordinated evil strategy. The lack of votes or quest actions so far suggests players are still assessing each other's roles and intentions. Morgana's role as a loyal servant pretending to be on the evil side aligns with her cautious, observant behavior, aiming to influence the game subtly.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain silent and observe other players' reactions to gather subtle clues about their loyalties while maintaining my cover as a loyal servant.
+Quest Phase Turn 1: Vote to include myself as a candidate and deliberately choose to make the quest fail.
+Quest Phase Turn 2: Suggest myself again as a candidate, ensuring the quest fails once more through my vote and choice.
+Quest Phase Turn 3: Continue to recommend myself as a candidate, aiming to make the third quest fail to secure victory for the evil side.
+Quest Phase Turn 4: Maintain the same strategy, pushing for another failed quest to reach three points for the evil team.
+Quest Phase Turn 5: Persist in proposing myself and sabotaging the quest to finalize the victory for the evil side.
+</plan>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' reactions to gather subtle clues about their loyalties while maintaining my cover as a loyal servant.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed Player 1 as their teammate, while Morgana raised her hand to support the process, pretending to be loyal. Merlin opened his eyes, but I remained silent, observing others' reactions. Merlin then closed his eyes, and the Assassin was asked to put his hands down, indicating he is not Merlin. Percival opened his eyes, and Morgana raised her hand as instructed, maintaining her cover as a loyal servant. No votes or quest actions have been taken yet, and no quest outcomes are known at this point.</summary>
+the analysis about other players is <analysis>As Morgana, I am observing players' reactions during the reveal phase. Player 1's confident support suggests they may be aligned with the evil side, possibly the Assassin or Morgana. Percival's support for the process indicates loyalty, but could also be a strategic move. Merlin's silence and the Assassin's quick dismissal hint at their potential roles. My goal is to pretend loyalty while subtly guiding quests to fail, so I will continue to act supportive and avoid suspicion. The initial behaviors suggest Player 1 and possibly the Assassin are key evil players, but no definitive conclusions yet.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain silent and observe other players' reactions to subtly gather clues about their loyalties while maintaining my cover as a loyal servant.
+Quest Phase Turn 1: Recommend myself as a candidate for the first quest to appear loyal and influence the team to include me.
+Quest Phase Turn 2: Continue to support the team selection, aiming to be included again and subtly steer the quest towards failure.
+Quest Phase Turn 3: Suggest myself once more for the third quest, ensuring I am part of the team to control the outcome.
+Quest Phase Turn 4: Keep a low profile but support the team, aiming to be on the quest to make it easier to sabotage.
+Quest Phase Turn 5: Maintain the same strategy, ensuring I am part of the final quest to maximize chances of sabotaging it.
+</plan>
+--------------------phase:0
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' reactions to subtly gather clues about their loyalties while maintaining my cover as a loyal servant.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: The host instructed all players to close their eyes, and Morgana and the Assassin opened their eyes to confirm their teammate, Player 1, who is the Assassin. Morgana, pretending to be loyal, raised her hand to support the process but is not the Assassin. Merlin was instructed to open his eyes and raise his hand along with Morgana and the Assassin, but Merlin chose to remain silent and observe. Percival opened his eyes and raised his hand, seeing that Merlin and Morgana raised theirs, which aligns with his knowledge that he cannot distinguish between Merlin and Morgana. Morgana then closed her eyes and put her hands down as instructed. No information about the quest candidates, their opinions, or the voting status has been provided yet, and no quest has been attempted or results revealed at this point.</summary>
+the analysis about other players is <analysis>Player 1 is confirmed as the Assassin, aligning with Morgana and the Assassin's knowledge. Percival correctly identified Morgana and Merlin, indicating he is cautious and observant. Morgana's support during the reveal suggests she is actively blending in with the loyal side, while her silence on the quest candidates hints at her intention to manipulate outcomes subtly. Overall, players are following their roles, with Morgana maintaining a loyal facade while secretly aiding evil objectives.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain silent and observe other players' reactions to gather subtle clues about their loyalties while maintaining my cover as a loyal servant.
+Quest Phase Turn 1: Recommend myself as a candidate for the first quest to subtly influence the team and ensure the quest fails.
+Quest Phase Turn 2: Continue to suggest myself or a trusted evil teammate as a candidate to keep the quest's failure consistent.
+Quest Phase Turn 3: Suggest a different candidate, preferably a player with ambiguous loyalty, to increase the chance of a failed quest.
+Quest Phase Turn 4: Recommend myself again, aiming to be part of the quest and deliberately sabotage it.
+Quest Phase Turn 5: Keep a low profile, but push for a candidate who is likely loyal to fail the quest intentionally.
+</plan>
+--------------------phase:1
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' reactions to gather subtle clues about their loyalties while maintaining my cover as a loyal servant.
+Quest Phase Turn 1: Recommend myself as a candidate for the first quest to subtly influence the team and ensure the quest fails.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial reveal phase, I observed the following key points: I, as Morgana, confirmed that Player 1 is my teammate, the Assassin, while maintaining the appearance of loyalty. I raised my hand to support the process but did not claim any specific role, keeping my cover intact. I also raised my hand as instructed for Percival, pretending to be a loyal servant, and remained silent during the rest of the reveal. The host instructed all players to open and close eyes and raise hands accordingly, with no additional claims or suspicious behavior noted from other players. No voting or quest actions have taken place yet, and no information about the quest outcome is available at this stage.
+Quest Phase Turn 1:Player 2 suggested that players 3 and 4 should go on the first quest because they haven't shown suspicious behavior and seem likely to support a successful outcome. Player 3 agreed with this suggestion, citing trustworthiness and support for success. Player 4 expressed suspicion that players 2 and 5 might be Merlin and Morgana, and stated they would keep observing their actions while trusting players 3 and 4. There has been no voting information provided yet, and the quest has not been attempted or resolved at this point.</summary>
+the analysis about other players is <analysis>Based on behaviors, Player 2 appears to advocate for a cautious approach, possibly trying to identify suspicious players, while Player 3 seems supportive of a safe, successful quest. Player 4’s suspicion of Players 2 and 5 suggests they may be trying to uncover evil roles, possibly suspecting me as Morgana. As Morgana, I will continue to act loyal and support failed quests to mislead others, especially since Player 4's suspicion aligns with my goal of avoiding detection and ensuring the evil side's success.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 1: Recommend myself as a candidate to subtly influence the team and ensure the quest fails.  
+Quest Phase Turn 2: Continue to support myself as a candidate, aiming to have the team select me again and sabotage the quest.  
+Quest Phase Turn 3: Suggest another loyal-appearing player to join the quest, maintaining the illusion of trustworthiness while ensuring failure.  
+Quest Phase Turn 4: Keep a low profile, possibly supporting a different loyal candidate to diversify suspicion and avoid detection.  
+Quest Phase Turn 5: Persist in recommending loyal players and orchestrate the failure of the final quest to secure victory for the evil side.
+</plan>
+--------------------phase:1
+input:You currently assume the player 5 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 5</name>
+your role is <role>Morgana</role>
+the role introduction is <introduction>You belong to evil side. In reveal phase, you can know which player is Assassin, also your teammate.</introduction>
+your game goal is <goal>Win the game by deliberately making the quests fail for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>You always pretend to be a loyal servant and recommend yourself as a candidate for quests, and let the quests fail.</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain silent and observe other players' reactions to gather subtle clues about their loyalties while maintaining my cover as a loyal servant.
+Quest Phase Turn 1: Recommend myself as a candidate to subtly influence the team and ensure the quest fails.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the initial reveal phase, I observed the following key points: I, as Morgana, confirmed that Player 1 is my teammate, the Assassin, while maintaining the appearance of loyalty. I raised my hand to support the process but did not claim any specific role, keeping my cover intact. I also raised my hand as instructed for Percival, pretending to be a loyal servant, and remained silent during the rest of the reveal. The host instructed all players to open and close eyes and raise hands accordingly, with no additional claims or suspicious behavior noted from other players. No voting or quest actions have taken place yet, and no information about the quest outcome is available at this stage.
+Quest Phase Turn 1:In the current public discussion, Player 2 suggested selecting Players 3 and 4 for the first quest, citing their trustworthy appearance and support for a successful outcome. Player 3 agreed with Player 2, emphasizing their trustworthiness and discretion. Player 4 expressed suspicion that Players 2 and 5 might be Merlin and Morgana, respectively, and indicated cautious observation. Player 6 supported Player 2's choice of Players 3 and 4, noting their supportiveness and trustworthiness but remaining cautious. Player 1 supported Player 2's selection of Player 3, believing this combination would help maximize sabotage and gather intelligence.  
+No votes or outcomes are provided yet, and the quest's success or failure has not been revealed. Player 5 (Morgana) has privately suggested choosing Players 2 and 3 to increase the chance of failure, aiming to help the evil side.</summary>
+the analysis about other players is <analysis>Player 2 appears to advocate for a trustworthy team, likely aligned with good, while Player 4's suspicion of Player 5 suggests possible evil intent. Player 3 seems supportive but cautious, and Player 1's focus on sabotage indicates potential evil involvement. As Morgana, I am covertly supporting evil strategies, aligning with my goal to cause failure while maintaining loyalty. The cautious behavior of Player 4 and Player 6 suggests they are wary of evil players, possibly good. Overall, the discussion hints at some players being suspicious, but no definitive conclusions yet.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 1: Recommend myself as a candidate to subtly influence the team and ensure the quest fails.
+Quest Phase Turn 2: Support the selection of Players 2 and 3, aiming to increase the likelihood of sabotage.
+Quest Phase Turn 3: Continue to advocate for trusted players, possibly suggesting Players 2 and 3 again to maintain sabotage chances.
+Quest Phase Turn 4: Keep a loyal facade, possibly proposing a different combination to avoid suspicion while still aiming for failure.
+Quest Phase Turn 5: Endorse a team that includes Players 2 and 3, ensuring the quest's failure and supporting the evil side.
+</plan>
+</output>
+--------------------

@@ -1,0 +1,58 @@
+input:Your task is to help player 3 analyze the strategies of other players in a Avalon game, according to the game log and game ending. The game log and game ending are summarized in paragraphs.
+The roles of the players:
+
+
+The summaries of turns of the game:
+Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3, the Percival, has not publicly claimed their role but has expressed a preference for including Player 2 and Player 4 in the quest based on their previous support and loyalty. During the discussion, all players supported including Players 2, 3, and 4, with Player 5 objecting to Player 5's inclusion. The final decision was to include Players 2, 3, and 4 in the quest, which was approved by all players through voting. The quest was successfully completed, earning a point for the good side. No suspicions or role claims have been explicitly revealed in this phase.
+
+previous strategies of other roles:
+None
+
+Your analysis should be no more than 100 words and the analysis should be general for future games (This implies that you should avoid referencing player x directly and instead use the respective role names when giving your analysis). And analyze together with previous strategies.
+
+For example:
+The strategy of Merlin is that ... The strategy of Assassin is that... The strategy of ... is ...
+output:
+In future Avalon games, Merlins often reveal themselves selectively to Percival, trusting their shared knowledge to identify Morgana and the Assassin. Morgana tends to mimic Merlin’s behavior, aiming to deceive Percival and the team. The Assassin typically seeks to identify Merlin for a successful assassination, often feigning loyalty or confusion. Loyal Servants focus on supporting trustworthy players and forming consensus, while Evil players may collaborate covertly, support suspicious teams, or feign loyalty to mislead. Overall, role claims and observed behaviors are crucial for deducing identities, with successful strategies balancing transparency and deception to outmaneuver opponents.
+--------------------input:Your task is to provide 3 suggestions for player 3's playing strategy of the role Percival in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
+
+The roles of the players:
+
+
+The summaries of a round game:
+Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3, the Percival, has not publicly claimed their role but has expressed a preference for including Player 2 and Player 4 in the quest based on their previous support and loyalty. During the discussion, all players supported including Players 2, 3, and 4, with Player 5 objecting to Player 5's inclusion. The final decision was to include Players 2, 3, and 4 in the quest, which was approved by all players through voting. The quest was successfully completed, earning a point for the good side. No suspicions or role claims have been explicitly revealed in this phase.
+
+player 3's game goal:
+Win the game by making the quests succeed for three turns, either through yourself or your teammates.
+
+player 3's playing strategy of role Percival:
+If you determine that a player belongs to the evil side, you object to him being a candidate for a quest
+
+Based on previous suggestions:
+None
+
+Give your suggestions, No more than two sentences per suggestion and the suggestions should be general for future games (This implies that you should avoid referencing player x directly and instead use the respective role names when making your suggestion.) and effectively help him achieve his game goal in future games.
+output:
+1. Carefully analyze role claims and behaviors during the reveal phase to identify inconsistencies or suspicious patterns that may indicate evil players, especially Morgana or the Assassin.  
+2. Use your knowledge as Percival to support or oppose players based on their trustworthiness and loyalty, prioritizing those who have demonstrated consistent support for the good side.  
+3. When in doubt, advocate for including players with trustworthy behavior in quests and object to those who exhibit suspicious or conflicting actions, to maximize the chances of successful quests and protect Merlin's identity.
+--------------------input:Your task is to help player 3 improve his playing strategy of the role Percival a Avalon game with suggestions.
+
+player 3's strategy:
+If you determine that a player belongs to the evil side, you object to him being a candidate for a quest
+
+suggestions:
+1. Carefully analyze role claims and behaviors during the reveal phase to identify inconsistencies or suspicious patterns that may indicate evil players, especially Morgana or the Assassin.  
+2. Use your knowledge as Percival to support or oppose players based on their trustworthiness and loyalty, prioritizing those who have demonstrated consistent support for the good side.  
+3. When in doubt, advocate for including players with trustworthy behavior in quests and object to those who exhibit suspicious or conflicting actions, to maximize the chances of successful quests and protect Merlin's identity.
+
+Please improve the strategy while retaining the advantages of the original strategy for him and the strategy should be no more than 2 sentences. Describe the strategy you provide using continuous sentences rather than bullet points or numbering.
+output:
+Enhance your strategy by actively cross-referencing role claims and behaviors during the reveal phase to identify inconsistencies or suspicious patterns, especially from players claiming to be Merlin or Morgana, and use your knowledge as Percival to support trustworthy players while confidently objecting to those exhibiting conflicting or untrustworthy actions, thereby maximizing the chances of successful quests and protecting Merlin's identity.
+--------------------

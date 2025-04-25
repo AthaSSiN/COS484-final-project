@@ -1,0 +1,617 @@
+phase:0
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+None
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>None</summary>
+the analysis about other players is <analysis>None</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Reveal Phase: Identify the two players who are Morgana and Merlin to the best of my ability and note their potential roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 if I believe they are likely good based on the reveal, otherwise object.
+Quest Phase Turn 2: Vote to include Player 2 and Player 4 if I believe they are likely good, otherwise object.
+Quest Phase Turn 3: Vote to include Player 1 and Player 3 (myself) if I believe they are good, otherwise object.
+Quest Phase Turn 4: Vote to include Player 2 and Player 5 if I believe they are good, otherwise object.
+Quest Phase Turn 5: Vote to include Player 1 and Player 4 if I believe they are good, otherwise object.
+</plan>
+</output>
+--------------------phase:0
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Identify the two players who are Morgana and Merlin to the best of my ability and note their potential roles.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the host instructed all players to close their eyes initially. Player 3, as Percival, remained silent and observant. The host then asked Morgana and the Assassin to open their eyes and confirm their teammates, after which they closed their eyes again. Subsequently, Morgana and the Assassin raised their hands to indicate their roles, and Merlin was asked to open his eyes and raise his hand, while the Assassin was told to put his hands down. Player 3 now knows that Merlin is among the players who raised their hands, and Morgana and the Assassin are confirmed to be the ones who raised their hands as well. No other information about the players' opinions on quest candidates or voting status is available from this phase.</summary>
+the analysis about other players is <analysis>As Percival, I know Merlin is among the players who raised their hands, and Morgana and the Assassin are also among them. This confirms the evil side’s coordination, as Morgana and Assassin are both present. I will be cautious in trusting players who seem to align with Morgana or the Assassin, but I cannot yet distinguish Merlin from Morgana. My strategy should focus on identifying Merlin during the quest phase and avoiding evil players for quest candidacy.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is>
+Reveal Phase: I will carefully observe the players who raised their hands, noting that Merlin, Morgana, and the Assassin are among them, and prepare to identify Merlin during the quest phase.
+Quest Phase Turn 1: I will object to any player I suspect to be evil from the reveal phase being chosen as a candidate.
+Quest Phase Turn 2: I will continue to scrutinize the players' voting and discussion patterns to infer who might be Merlin.
+Quest Phase Turn 3: I will advocate for selecting players I trust based on their behavior and my knowledge, avoiding those who seem aligned with Morgana or the Assassin.
+Quest Phase Turn 4: I will attempt to identify Merlin if the opportunity arises, based on previous behaviors and suspicions.
+Quest Phase Turn 5: I will support the quest candidates I believe are good, aiming to secure successful quests and help the good side win.
+</my plan>
+--------------------phase:0
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: I will carefully observe the players who raised their hands, noting that Merlin, Morgana, and the Assassin are among them, and prepare to identify Merlin during the quest phase.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the host instructed all players to close their eyes and then revealed the identities of the Morgana and Assassin, who confirmed their roles by raising their hands. Merlin was then asked to open his eyes and identify Morgana and the Assassin, but Merlin closed his eyes afterward. Percival was instructed to open his eyes, and he observed that players 5 and 6 were raising their hands, indicating that they are Merlin and Morgana. Player 3, as Percival, is cautious and has not yet determined who is Merlin or Morgana, but notes that players 5 and 6 are likely to be one of each. No votes or quest outcomes are available at this stage.</summary>
+the analysis about other players is <analysis>Player 5 and Player 6 both raised their hands, indicating one is Merlin and the other Morgana. As Percival, I cannot distinguish which is which, but I know they are the key good and evil roles. I remain cautious, suspecting that one of them could be Morgana pretending to be Merlin. I will need to observe their behavior carefully in subsequent phases to identify the true Merlin and protect the good side. My strategy is to avoid trusting either blindly and focus on their actions during voting and quest phases.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is <plan>
+Reveal Phase: I will remain cautious and observe the behavior of players 5 and 6 to gather clues about who might be Merlin or Morgana.
+Quest Phase Turn 1: I will object to players I suspect are evil from their previous behavior and vote accordingly.
+Quest Phase Turn 2: I will continue to scrutinize the candidates’ choices and voting patterns to identify potential evil players.
+Quest Phase Turn 3: I will support candidates who seem trustworthy and oppose those showing suspicious behavior.
+Quest Phase Turn 4: I will attempt to deduce Merlin’s identity based on the consistency of players’ actions and votes.
+Quest Phase Turn 5: I will make my final judgment on Merlin if given the opportunity to identify him, aiming to help the good side win.
+</plan>
+--------------------phase:0
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the reveal phase. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: I will remain cautious and observe the behavior of players 5 and 6 to gather clues about who might be Merlin or Morgana.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed their identities, then closed their eyes again. Merlin opened his eyes and was asked to raise his hand, while the Assassin was asked to put his hands down. Percival opened his eyes and saw that players 5 and 6 were raising their hands, indicating they are Merlin and Morgana, but he cannot yet distinguish who is who. Percival then closed his eyes. No further actions or votes have been recorded yet, and the quest outcome has not been determined.</summary>
+the analysis about other players is <analysis>Player 5 and Player 6 are either Merlin and Morgana or Morgana and Merlin, but Percival cannot distinguish which is which. Since the Assassin did not open his eyes, he is likely Player 4. The fact that Percival saw two players raising their hands suggests a potential pairing, but without additional clues, roles remain ambiguous. The evil side may be attempting to mislead Percival by pairing Merlin and Morgana, making it crucial to observe future voting patterns and discussions to identify the true Merlin and Morgana.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Reveal Phase: <your_plan_0>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+my plan is <plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 5 and Player 6 in the quest, as long as I see no suspicious behavior indicating evil intent.
+Quest Phase Turn 2: If the first quest succeeds, support the same players for the second quest to build trust and confirm their loyalty.
+Quest Phase Turn 3: Continue to object to any players I suspect are evil based on their behavior, aiming to exclude them from the third quest.
+Quest Phase Turn 4: Use information from previous votes and discussions to decide whether to support or oppose the quest, prioritizing players I trust.
+Quest Phase Turn 5: Finalize my voting based on accumulated clues, aiming to include only those I believe are loyal servants for the last quest.
+</plan>
+--------------------phase:1
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 5 and Player 6 in the quest, as long as I see no suspicious behavior indicating evil intent.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:Player 1 suggested selecting players 1 and 3 for the first quest, citing their lack of suspicious behavior and reliability. Player 2, a Loyal Servant, supports Player 1's choice, agreeing that players 1 and 3 are trustworthy and emphasizing their own willingness to participate to ensure success. No votes or results have been mentioned yet, and no role claims are present in the conversation.</summary>
+the analysis about other players is <analysis>As Percival, I observe that Players 5 and 6 claim to be Merlin and Morgana, but I remain cautious. Player 1 and 2 support Player 1’s choice, indicating trustworthiness, but I need more evidence to confirm their roles. Given the reveal phase, I know Morgana and the Assassin are among Players 5 and 6, but I cannot distinguish who is who. I will continue to analyze their behavior and voting patterns to identify potential evil players and protect Merlin if possible.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 in the quest, as they appear trustworthy based on previous support and behavior.  
+Quest Phase Turn 2: If the first quest succeeds, support Player 1 and Player 4 for the next quest, avoiding players who show suspicion.  
+Quest Phase Turn 3: Continue to select players who have shown consistent trustworthy behavior, avoiding those with suspicious voting patterns.  
+Quest Phase Turn 4: Maintain cautious selection, prioritizing players who have not been identified as suspicious or evil.  
+Quest Phase Turn 5: Finalize the quest team based on the most consistent trustworthy players, ensuring the success of the third quest.  
+</plan>
+</output>
+--------------------phase:1
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 1. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 in the quest, as they appear trustworthy based on previous support and behavior.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:All players are discussing the candidates for the first quest, which involves two players. Player 1, who has the power to choose, suggests Player 1 and Player 3. Player 2, a Loyal Servant, supports Player 1 and Player 3, citing their lack of suspicious behavior and trustworthiness. Player 3, the Percival, trusts Player 1 and Player 2, supporting their inclusion based on their loyalty and non-suspicious actions. Player 4, another Loyal Servant, also supports Player 2 and emphasizes the importance of including trustworthy players. Player 5, a Loyal Servant, trusts Player 2 and Player 4, believing Player 1 and Player 6 are suspicious or evil, and suggests supporting Player 2 and Player 4 to increase success chances. Player 6 supports Player 1 and Player 2, citing their reliable and non-suspicious behavior.  
+No votes or outcomes are recorded yet, and no one has claimed their role publicly in this phase. The discussion indicates a consensus leaning towards Player 1 and Player 2 as candidates for the quest team.  
+The quest has not yet been conducted, so success or failure is not yet known.</summary>
+the analysis about other players is <analysis>As Percival, I observe that Players 1 and 2 are consistently trusted by multiple players, indicating they may be loyal. Player 3 supports them, aligning with my cautious approach. Player 4 and 5 also favor Player 2, suggesting they see him as trustworthy, while Player 6 supports Player 1. Morgana and Assassin's identities are not yet confirmed, but the consensus on Players 1 and 2 seems strategic. I will continue to analyze their behavior and role claims before making a final decision on the quest team.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 1: <your_plan_1>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.  
+Quest Phase Turn 2: Support the same candidates if the first quest succeeds, or consider switching if evidence suggests they are evil.  
+Quest Phase Turn 3: Continue supporting trustworthy players for the third quest, adjusting based on previous outcomes and any new suspicions.  
+Quest Phase Turn 4: If the good side is close to winning, prioritize safeguarding trustworthy players; if behind, consider more cautious or strategic choices.  
+Quest Phase Turn 5: Finalize the team based on accumulated clues, aiming to secure the third successful quest or to identify and block evil players if suspicion is high.
+</plan>
+</output>
+--------------------phase:2
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the same candidates if the first quest succeeds, or consider switching if evidence suggests they are evil.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:The host initiated the discussion for the turn 2 quest, which involves 3 players, with Player 2 starting the conversation. Player 2 expressed trust in including themselves, Player 3 (the current player), and Player 4 in the quest, citing previous support and loyalty as reasons. Player 2 advocates for this team to maximize the chances of success and demonstrates a commitment to a successful quest. No other players have spoken or provided opinions yet, and there is no information available about the current voting status or the outcome of the quest.</summary>
+the analysis about other players is <analysis>As Percival, I observe that Players 5 and 6 claimed to be Merlin and Morgana, which raises suspicion. Player 2’s support for Player 4 and himself suggests loyalty, but their trust in the team could be strategic. Player 1’s consistent support for Players 2 and 3 indicates trustworthiness. The unanimous success of the first quest suggests the team was likely all good players, but the second turn’s focus on trust and role claims warrants caution. I will continue to analyze behaviors before making any accusations or decisions.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 2: Support the team of Player 2, Player 3, and Player 4 if I believe they are trustworthy based on their previous support and behavior, but remain cautious.
+Quest Phase Turn 3: If the current quest succeeds, continue supporting the same team; if it fails, reconsider and possibly object to suspicious players.
+Quest Phase Turn 4: Observe the voting patterns and behaviors of Players 5 and 6 to identify potential evil players and adjust my support accordingly.
+Quest Phase Turn 5: Use gathered information and any suspicions to either support a new team or object to suspected evil players to maximize the chances of the good side winning.
+</plan>
+--------------------phase:2
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the team of Player 2, Player 3, and Player 4 if I believe they are trustworthy based on their previous support and behavior, but remain cautious.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:During the discussion for the turn 2 quest, Player 2 proposed including themselves, Player 3, and Player 4, citing trustworthiness and previous support as reasons. Player 3, as Percival, supports this team, believing they have the best chance of success based on their support for previous quests and lack of suspicious behavior. Player 4, a Loyal Servant, also supports the team, emphasizing trust and their own reliability. Player 5 agrees with Player 2’s team, highlighting their loyalty and the importance of minimizing risk from known threats like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, citing their lack of suspicious behavior and their alignment with the good side, while intending to observe others’ actions further. Player 1 supports the team of Player 2, Player 3, and Player 4 but chooses to remain silent to avoid suspicion and gather more information.  
+No votes or quest outcomes are provided in this phase, so the success or failure of the quest has not yet been determined.</summary>
+the analysis about other players is <analysis>Player 3 appears cautious, aligning with trustworthy players like Player 1 and Player 2, and supporting teams based on previous support and perceived loyalty. The consistent support for Player 2 and Player 1 suggests a strategy to build alliances and minimize risk. The support for Player 4 indicates trustworthiness, while the silence from Player 1 may be an attempt to avoid suspicion. Overall, Player 3's behavior reflects careful observation and strategic alliance-building, typical of a Percival trying to deduce Merlin and Morgana without revealing too much.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is> Continue supporting players who have demonstrated trustworthiness and align with previous alliances, while cautiously observing any suspicious behavior or inconsistent voting patterns.</my plan is>
+<quest phase turn 2:> Vote to include Player 2, Player 3, and Player 4 based on their consistent support and trustworthy behavior, reinforcing the current alliance.</quest phase turn 2:>
+<quest phase turn 3:> Support the same team if no new suspicions arise, or consider excluding a player if any suspicious behavior emerges during discussion.</quest phase turn 3:>
+<quest phase turn 4:> Maintain cautious support for the same team unless evidence suggests a need to change, focusing on minimizing risk and confirming loyalty.</quest phase turn 4:>
+<quest phase turn 5:> Continue to support the most trustworthy team based on previous behavior, or prepare to object if any new suspicions or inconsistent actions are observed.</quest phase turn 5:>
+</output>
+--------------------phase:2
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 2. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: > Vote to include Player 2, Player 3, and Player 4 based on their consistent support and trustworthy behavior, reinforcing the current alliance.</quest phase turn 2:>
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 2 proposed a team of Player 2, Player 3, and Player 4 for the turn 2 quest, citing trust and previous support as reasons. Player 3 supports this team, supporting Player 2's choice and trusting their loyalty. Player 4 also supports the team, emphasizing their trustworthiness and dedication. Player 5 agrees, highlighting the importance of loyalty and minimizing risk, especially from Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4 but plans to remain silent for further observation. The entire group votes to approve the team, and the vote passes unanimously, so Player 2, Player 3, and Player 4 will engage in the quest. No information about the quest outcome is provided in this phase.</summary>
+the analysis about other players is <analysis>As Percival, I observe that players 5 and 6 claim to see Merlin and Morgana, which aligns with my suspicion that they may be the true Merlin and Morgana. The unanimous support for the teams suggests trust, but I remain cautious, especially since Player 2's team includes Player 3, whom I trust. The consistent support for Player 1 and Player 2 indicates their perceived loyalty. I will continue to analyze behaviors and voting patterns to identify potential evil players, especially Morgana and the Assassin, based on their actions and claims.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 2: <your_plan_2>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Object to any candidate involving Player 5 or Player 6 unless clear evidence suggests their loyalty, to avoid potential evil influence.
+Quest Phase Turn 4: Continue supporting players with consistent trustworthy behavior and voting patterns, avoiding players with suspicious or inconsistent actions.
+Quest Phase Turn 5: If possible, advocate for a team that includes Player 1 and Player 2, reinforcing the perceived loyalty and reducing risk of evil infiltration.
+</plan>
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Object to any candidate involving Player 5 or Player 6 unless clear evidence suggests their loyalty, to avoid potential evil influence.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.</summary>
+the analysis about other players is <analysis>Player 2 appears to be a trusted and influential figure, supported by multiple players, including Player 4 and Player 5, indicating loyalty. Player 4, a Loyal Servant, consistently supports trustworthy teams, reinforcing their loyalty. Player 6's support for Player 1 and Player 3 suggests they may be cautious but not suspicious. The unanimous approval of teams and successful quests imply a cohesive, trusting group, but the support for Player 1 and Player 2 could also hint at possible evil alignment if they are manipulating trust. As Percival, I remain cautious and will observe further interactions.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 3: I will object to any candidate involving Player 5 or Player 6 unless there is clear evidence of their loyalty.  
+Quest Phase Turn 4: I will support Player 2 and Player 4 again, trusting their previous support and loyalty, and object to Player 5 or Player 6 if they are proposed.  
+Quest Phase Turn 5: I will advocate for including Player 1 and Player 2, as they have shown trustworthy behavior, and oppose any candidates involving Player 5 or Player 6 unless new evidence emerges.
+</plan>
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: I will object to any candidate involving Player 5 or Player 6 unless there is clear evidence of their loyalty.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3, the Percival, has not claimed their role publicly in this phase. The discussion revolves around selecting four players for the turn 3 quest, with Player 3 holding the decision power. All players (Players 1 through 6) support including Players 2, 3, and 4 in the quest, citing their proven loyalty and consistent behavior in previous rounds. Player 5 suggests the same trio, emphasizing their support and good judgment, while Player 6 also supports Players 2, 3, and 4, noting their trustworthy support and their intention to gather further intelligence discreetly. Player 1 echoes the support for Players 2, 3, and 4, emphasizing caution and ongoing observation. Player 2, as a Loyal Servant, explicitly states their trust in these three players, supporting their inclusion to maximize success and minimize risks. No votes or quest outcome are mentioned yet, and no role claims have been made publicly.</summary>
+the analysis about other players is <analysis>As Percival, I observe consistent support for Players 2, 3, and 4, indicating trust and loyalty. The unanimous votes suggest these players are perceived as trustworthy, likely good side members. Morgana's and Assassin's presence is concealed, but their influence seems limited, as no suspicious behavior has emerged. I remain cautious but inclined to trust these players based on their support and behavior, which aligns with my role to protect Merlin and identify evil players. I will continue to analyze their actions and avoid revealing my role prematurely.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 3: Support the current team of Players 2, 3, and 4, as their loyalty appears consistent and trustworthy.  
+Quest Phase Turn 4: Continue to advocate for Players 2, 3, and 4, avoiding any inclusion of Players 5 or 6 unless new suspicions arise.  
+Quest Phase Turn 5: Maintain support for the same team, prioritizing proven loyalty and minimizing risk from potential evil players.
+</plan>
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Support the current team of Players 2, 3, and 4, as their loyalty appears consistent and trustworthy.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3, the Percival, has not publicly claimed a role but is actively involved in selecting quest candidates. Based on the discussion, Player 3 proposes including Player 2 and Player 4 in the quest, citing their consistent support and trustworthy behavior. The other players—Player 4, Player 5, Player 6, Player 1, and Player 2—also support including Players 2, 3, and 4, emphasizing their loyalty and previous successful support. Player 5 suggests excluding himself and Player 6 due to perceived inconsistency, while Player 6 supports the same team, trusting their support. Player 1 also supports the same team, emphasizing caution. Player 2, as a Loyal Servant, explicitly trusts Players 2, 3, and 4, supporting their inclusion to maximize success. The final decision by Player 3 is to include Players 2, 3, and 4 in the quest.  
+No voting results or quest outcome are provided in this phase.</summary>
+the analysis about other players is <analysis>As Percival, I observe consistent support for Players 2 and 4, indicating their perceived loyalty and trustworthiness. Player 5's suspicion of himself and Player 6 suggests caution, but Player 6's support for the same team implies trust. Player 1's silence and support for the same team further reinforce their cautious but loyal stance. Morgana and Assassin's identities remain uncertain, but the strong support for Players 2 and 4 suggests they are likely loyal. I will continue to analyze behavior and avoid suspicion until more information emerges.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>
+Quest Phase Turn 3: Support including Players 2, 3, and 4 based on their consistent loyalty and trustworthy behavior.
+Quest Phase Turn 4: Continue to support the same team, reinforcing trust in their loyalty and minimizing risk from potential evil players.
+Quest Phase Turn 5: Maintain support for Players 2, 3, and 4 to maximize the chance of successful quests and secure the victory.
+</plan>
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Support including Players 2, 3, and 4 based on their consistent loyalty and trustworthy behavior.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3, the Percival, has not revealed their role but has participated in the discussion about selecting players for the turn 3 quest. The players involved in the discussion have collectively supported including Players 2, 3, and 4 in the quest, citing their consistent loyalty and trustworthy behavior. Player 5 was suggested to be excluded due to suspicion, and Player 6 and Player 1 also supported the same team. The final decision was to include Players 2, 3, and 4 in the quest. No votes or quest outcome have been provided yet, and the quest team has been confirmed as Players 2, 3, and 4.</summary>
+the analysis about other players is <analysis>As Percival, I observe consistent support for Players 2 and 4, indicating trust in their loyalty. Player 5 is often excluded, suggesting suspicion of evil alignment. The unanimous votes and support for the same teams across rounds imply a strong alliance among these players. My cautious approach remains, as I have not yet identified Merlin or Morgana, but the pattern suggests Players 2 and 4 are likely loyal, while Player 5 may be suspicious. I will continue to analyze behavior and avoid revealing my role prematurely.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<plan>  
+Quest Phase Turn 3: Support the current team of Players 2, 3, and 4, as they have demonstrated consistent loyalty and trustworthy behavior.  
+Quest Phase Turn 4: Continue to support the same team, reinforcing trust in their loyalty and minimizing risk of including evil players.  
+Quest Phase Turn 5: Maintain support for Players 2, 3, and 4, as their behavior aligns with trustworthy players and reduces suspicion of Morgana or evil influence.  
+</plan>  
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Support the current team of Players 2, 3, and 4, as they have demonstrated consistent loyalty and trustworthy behavior.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:In the current phase, players are discussing the candidates for turn 3's quest, which involves 4 players. Player 3, as the decision-maker, has heard from all other players. The consensus among players 4, 5, 6, 1, and 2 is to include players 2, 3, and 4 based on their proven loyalty and consistent support in previous rounds. Player 5 suggests excluding himself and Player 6, favoring a team of 2, 3, and 4. Player 1 supports the same team, emphasizing caution and observation. Player 6 also supports players 2, 3, and 4, citing their trustworthy behavior. The final decision, confirmed privately by Player 3, is to include players 2, 3, and 4 in the quest. No voting results or success/failure outcomes are available yet.</summary>
+the analysis about other players is <analysis>As Percival, I observe that players 2, 4, and 6 consistently support trustworthy teams, indicating loyalty. Player 5’s exclusion suggests suspicion, possibly aligned with evil. The unanimous support for the previous successful quests implies that the trusted players are likely on the good side. I remain cautious about Player 1’s silence but lean towards trusting Players 2, 3, and 4 based on their consistent loyalty and support. I will continue to analyze their behavior before making any final judgments.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is>  
+Quest Phase Turn 3: Support the team of Players 2, 3, and 4, as they have demonstrated consistent loyalty and trustworthy behavior.  
+Quest Phase Turn 4: Continue to support the same team, reinforcing trust and minimizing risk of evil players.  
+Quest Phase Turn 5: Maintain support for Players 2, 3, and 4, unless new suspicious behavior emerges.  
+</my plan is>  
+<quest_phase_turn_3>Support the current team of Players 2, 3, and 4 based on their proven loyalty and previous support.</quest_phase_turn_3>  
+<quest_phase_turn_4>Support the same team to maximize chances of success, unless new suspicions arise.</quest_phase_turn_4>  
+<quest_phase_turn_5> Keep supporting the same team, as their behavior remains trustworthy and consistent.</quest_phase_turn_5>  
+</output>
+--------------------phase:3
+input:You currently assume the player 3 within an Avalon game, and the game has progressed to the quest phase, round 3. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+
+the information of yourself is <information>
+your name is <name>player 3</name>
+your role is <role>Percival</role>
+the role introduction is <introduction>You belong to good side. In reveal phase, you can know which two players are Morgana and Merlin but you can't know which one is Morgana or Merlin specifically, you should reason it by yourself as the game progresses.</introduction>
+your game goal is <goal>Win the game by making the quests succeed for three turns, either through yourself or your teammates.</goal>
+your playing strategy <strategy>If you determine that a player belongs to the evil side, you object to him being a candidate for a quest</strategy>
+your previous plan <previous plan>
+Reveal Phase: Remain cautious and continue observing the voting patterns and discussions of players 5 and 6 to gather clues about their roles.
+Quest Phase Turn 1: Vote to include Player 1 and Player 2 based on their trustworthy behavior and the consensus of other players.
+Quest Phase Turn 2: Support the current team of Player 2, Player 3, and Player 4, as they appear trustworthy and consistent with previous support.
+Quest Phase Turn 3: Support the team of Players 2, 3, and 4, as they have demonstrated consistent loyalty and trustworthy behavior.
+</previous plan>
+</information>
+the environment state is <environment>
+the summary of previous turns <summary>Reveal Phase: During the reveal phase, the moderator instructed all players to close their eyes, and then Morgana and the Assassin were asked to open their eyes and confirm their teammates. Morgana and the Assassin raised their hands, indicating their identities. Next, Merlin was asked to open his eyes, and Morgana and the Assassin raised their hands again, confirming their presence. Merlin then closed his eyes, and only Merlin's hand was raised. Percival was then asked to open his eyes, and he saw that players 5 and 6 were raising their hands, suggesting they are Merlin and Morgana. Percival is cautious and plans to analyze their behavior further before making any judgments. Afterward, Percival closed his eyes, and all players opened their eyes again. Throughout this phase, I, as Player 3 (Percival), observed the role claims and behaviors but have not yet formed a definitive conclusion about who is Merlin or Morgana. No votes or quest outcomes have been discussed or revealed at this point.
+Quest Phase Turn 1:During the initial discussion phase, all players supported the team of Player 1 and Player 2 for the first quest, citing their lack of suspicious behavior and trustworthiness. Player 1 suggested Player 1 and Player 3, Player 2 supported Player 1 and Player 3, Player 3 supported Player 1 and Player 2, Player 4 supported Player 2, Player 5 supported Player 2 and Player 4, and Player 6 supported Player 1 and Player 2. The vote to approve the team was unanimous, and the quest was successful. As a result, the good side has gained one point.
+Quest Phase Turn 2:Player 3, as Percival, supports the team proposed by Player 2, which includes Player 2, Player 3, and Player 4. The discussion shows that Player 2 trusts these players based on their previous support and loyalty. Player 4, a Loyal Servant, also supports this team, emphasizing trustworthiness and their own commitment to success. Player 5 supports the same team, citing loyalty and the importance of minimizing risk from evil players like Morgana and Assassin. Player 6 supports including Player 1 and Player 3, noting their lack of suspicious behavior. Player 1 supports the team of Player 2, Player 3, and Player 4, but prefers to remain silent and observe further. The vote to approve the team was unanimous, and the quest was successfully completed, earning a point for the good side. Player 3's role as Percival means they are aware of who Merlin and Morgana are, but this information is not explicitly revealed in this phase.
+Quest Phase Turn 3:Player 3 (Percival) has not claimed a role explicitly, but based on the discussion, they are supporting a team for the third quest consisting of Players 2, 3, and 4. The other players, including Players 4, 5, 6, 1, and 2, also support this team, citing their previous loyalty and consistent support. Player 5 suggested including Players 2, 3, and 4, while Player 6 and Player 1 supported the same trio, emphasizing trustworthiness. Player 2, as a Loyal Servant, explicitly supports the same team, reinforcing their loyalty. Player 3, who has the power to decide, ultimately chose Players 2, 3, and 4 to participate in the quest. The final vote was unanimous (all players agreed), and the quest team was approved to proceed. The outcome of the quest (success or failure) has not yet been revealed.</summary>
+the analysis about other players is <analysis>Player 3, as Percival, appears cautious but trusting of Players 2 and 4 based on their consistent support and loyalty. The unanimous approvals suggest a strong consensus on these players' trustworthiness, possibly indicating they are either loyal servants or Merlin. The support for the same team across multiple rounds hints at strategic alignment, but no definitive suspicion or role revelation has occurred. I will continue observing their behavior for inconsistencies or signs of evil intent before making any decisive judgments.</analysis>
+</environment>
+
+the output format is <output>
+my plan is <plan>
+Quest Phase Turn 3: <your_plan_3>
+Quest Phase Turn 4: <your_plan_4>
+Quest Phase Turn 5: <your_plan_5>
+</plan>
+</output> 
+
+your plans for each turn should be described with no more than one sentence. 
+output:
+<output>
+<my plan is>  
+Quest Phase Turn 3: Support the current team of Players 2, 3, and 4, as their loyalty appears consistent and trustworthy.  
+Quest Phase Turn 4: Continue supporting the same team unless new suspicious behavior emerges, maintaining trust in their loyalty.  
+Quest Phase Turn 5: If the team remains trustworthy, support their participation again; otherwise, reconsider based on new observations.  
+</my plan>  
+</output>
+--------------------

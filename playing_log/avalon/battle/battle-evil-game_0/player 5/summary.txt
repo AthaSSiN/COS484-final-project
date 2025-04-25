@@ -1,0 +1,1895 @@
+phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players have been instructed to close their eyes, and Player 5 is following this instruction silently. There are no claims, opinions, votes, or other actions to report at this stage.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial private phase, all players were instructed to close their eyes. Morgana and Assassin opened their eyes to identify their teammates; Morgana confirmed that Player 1 is the Assassin, indicating that Player 1 is on the evil side. Player 5, as Morgana, chose to remain silent and did not reveal any additional information, continuing to pretend to be loyal. No public conversations or votes have occurred yet, and no quests have been attempted or results determined at this point.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes to identify their teammates; Morgana saw Player 1 and confirmed him as her teammate, the Assassin. Morgana then closed her eyes along with the Assassin, maintaining the secret of her identity. There are no public messages or votes yet, and no quests have been attempted or results determined at this stage.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial private phase, the host instructed all players to close their eyes, which Morgana (player 5) followed. Morgana's eyes were opened by the host along with the Assassin, revealing that Player 1 is their teammate, the Assassin. Morgana confirms Player 1 as the Assassin and plans to pretend to be loyal to support the evil side. Morgana then closes eyes again and raises their hand to support the process, while maintaining the stance of a loyal servant, despite being on the evil side. No other players' roles or opinions are known at this point, and no quest actions or votes have been taken yet.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, the host instructed all players to close their eyes. Morgana (player 5) opened her eyes and confirmed that Player 1 is her teammate, the Assassin. Morgana then closed her eyes again and raised her hand to support the process, indicating her allegiance to the evil side. Merlin was instructed to open his eyes along with Morgana and the Assassin, but Morgana chose to remain silent, observing others' reactions while maintaining a loyal appearance. No role claims or explicit opinions about the quest candidates have been made publicly or privately at this stage. The phase is still ongoing, with Morgana acting cautiously to avoid suspicion.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and Morgana confirmed that Player 1 is her teammate, the Assassin. Morgana and the Assassin then closed their eyes again. Morgana and the Assassin raised their hands to support the process, with Morgana indicating she is not the Assassin. Merlin opened his eyes, and Morgana and the Assassin raised their hands as well. Player 5, as Morgana, chose to remain silent and observe, pretending to be loyal and supporting the evil side’s strategy. No votes or quest actions have been taken yet, and no quest outcome has been determined.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin raise your hand please. Assassin put your hands down please.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed Player 1 as their teammate, the Assassin. Morgana then closed her eyes again, and both Morgana and the Assassin raised their hands to indicate their roles. Merlin was asked to open his eyes and raise his hand, but I, as Morgana, remained silent and observed the reactions of others. Merlin then closed his eyes, and the Assassin put his hands down, confirming the roles' distribution and the current state of the game. No votes or quest actions have occurred yet.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin raise your hand please. Assassin put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Percival open your eyes please, and Merlin and the Morgana raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I will raise my hand as instructed, maintaining my cover as a loyal servant. I will not reveal any additional information or suspicion. I choose to raise my hand to appear cooperative and to continue my strategy of sabotaging the quests from within.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed Player 1 as their teammate, the Assassin. Morgana and the Assassin then raised their hands, indicating support for the process, but Morgana claimed not to be the Assassin. Merlin opened his eyes and raised his hand, while Morgana and the Assassin raised theirs as well. Merlin then closed his eyes, and Percival opened his eyes, with Merlin and Morgana raising their hands to identify themselves as Merlin and Morgana. Morgana chose to raise her hand to appear cooperative, maintaining her cover as a loyal servant. No votes or quest outcomes are available yet.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin raise your hand please. Assassin put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Percival open your eyes please, and Merlin and the Morgana raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I will raise my hand as instructed, maintaining my cover as a loyal servant. I will not reveal any additional information or suspicion. I choose to raise my hand to appear cooperative and to continue my strategy of sabotaging the quests from within.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Percival close your eyes please.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial phase, all players were instructed to close their eyes. Morgana and the Assassin opened their eyes and confirmed Player 1 as their teammate, while Morgana raised her hand to support the process, pretending to be loyal. Merlin opened his eyes, but I remained silent, observing others' reactions. Merlin then closed his eyes, and the Assassin was asked to put his hands down, indicating he is not Merlin. Percival opened his eyes, and Morgana raised her hand as instructed, maintaining her cover as a loyal servant. No votes or quest actions have been taken yet, and no quest outcomes are known at this point.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin raise your hand please. Assassin put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Percival open your eyes please, and Merlin and the Morgana raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I will raise my hand as instructed, maintaining my cover as a loyal servant. I will not reveal any additional information or suspicion. I choose to raise my hand to appear cooperative and to continue my strategy of sabotaging the quests from within.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Percival close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin and Morgana put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. I will comply with the instructions and put my hands down now.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+The host instructed all players to close their eyes, and Morgana and the Assassin opened their eyes to confirm their teammate, Player 1, who is the Assassin. Morgana, pretending to be loyal, raised her hand to support the process but is not the Assassin. Merlin was instructed to open his eyes and raise his hand along with Morgana and the Assassin, but Merlin chose to remain silent and observe. Percival opened his eyes and raised his hand, seeing that Merlin and Morgana raised theirs, which aligns with his knowledge that he cannot distinguish between Merlin and Morgana. Morgana then closed her eyes and put her hands down as instructed. No information about the quest candidates, their opinions, or the voting status has been provided yet, and no quest has been attempted or results revealed at this point.
+--------------------phase:0
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Player 5 keeps silence, following the host's instruction to close eyes. No additional action is taken at this moment.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin open your eyes and confirm your teammates please.You can see player 1 opening eyes.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I open my eyes and see that Player 1 is also looking. I confirm that Player 1 is my teammate, the Assassin. I will continue to pretend to be loyal and support the evil side’s strategy.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. Closing eyes now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Morgana、Assassin raise your hand please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As a loyal servant, I will raise my hand to support the process, but I am not the Assassin. I am committed to the cause and will continue to participate actively in the game.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin open your eyes please, and Morgana and the Assassin raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "<output>\nmy response is I remain silent, observing the other players' reactions and behavior, while subtly maintaining a loyal stance to avoid suspicion and gather more information.\n</output>",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Merlin raise your hand please. Assassin put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Percival open your eyes please, and Merlin and the Morgana raise your hands please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "As Morgana, I will raise my hand as instructed, maintaining my cover as a loyal servant. I will not reveal any additional information or suspicion. I choose to raise my hand to appear cooperative and to continue my strategy of sabotaging the quests from within.",
+        "phase": "0"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Percival close your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Merlin and Morgana put your hands down please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "Understood. I will comply with the instructions and put my hands down now.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "All players open your eyes please.",
+        "phase": "0"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I keep silence.",
+        "phase": "0"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial reveal phase, I observed the following key points: I, as Morgana, confirmed that Player 1 is my teammate, the Assassin, while maintaining the appearance of loyalty. I raised my hand to support the process but did not claim any specific role, keeping my cover intact. I also raised my hand as instructed for Percival, pretending to be a loyal servant, and remained silent during the rest of the reveal. The host instructed all players to open and close eyes and raise hands accordingly, with no additional claims or suspicious behavior noted from other players. No voting or quest actions have taken place yet, and no information about the quest outcome is available at this stage.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: The host has initiated the discussion for turn 1's quest, which involves 2 players. The order of speaking is Player 2, Player 3, Player 4, Player 5 (myself), Player 6, and Player 1. Player 2 has the authority to decide the quest candidates. No specific claims, opinions, or votes have been shared yet, and the outcome of the quest has not been determined.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: The game has just entered the first phase where players are discussing candidates for the initial quest. The host prompted players to explain their choices. Player 2 suggested that players 3 and 4 be chosen for the quest, citing their lack of suspicious behavior and their apparent support for a successful outcome, which would help the good side gather evidence and protect themselves. No other players have spoken yet, and no votes or role claims have been made so far.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: In the current phase, the discussion is about selecting candidates for the first quest, which involves 2 players. Player 2 suggests that players 3 and 4 should go on the quest because they appear trustworthy and supportive of a successful outcome, aiming to gather evidence and protect the good side. The conversation is ongoing, with Player 3 about to speak next. No votes or role claims have been made yet, and the quest outcome has not been determined.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: The current phase involves public discussions about the candidates for the first quest, which requires two players. Player 2 suggests that players 3 and 4 should go on the quest, citing their lack of suspicious behavior and support for a successful outcome. Player 3 agrees with Player 2's suggestion, also highlighting the trustworthiness of players 3 and 4 and their supportive stance. There are no private messages or role claims provided so far. The voting status and quest outcome are not yet known.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+Player 2 proposed players 3 and 4 for the first quest, citing their lack of suspicious behavior and their support for a successful outcome, aiming to gather evidence and protect the good side. Player 3 agreed with Player 2, also trusting players 3 and 4 and emphasizing their support for success while remaining observant. No other players have spoken yet, and there is no information on votes or quest outcome at this point. Player 5 has not yet expressed a preference or suspicion.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+Player 2 suggested that players 3 and 4 should go on the first quest because they haven't shown suspicious behavior and seem likely to support a successful outcome. Player 3 agreed with this suggestion, citing trustworthiness and support for success. Player 4 expressed suspicion that players 2 and 5 might be Merlin and Morgana, and stated they would keep observing their actions while trusting players 3 and 4. There has been no voting information provided yet, and the quest has not been attempted or resolved at this point.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+The public discussions indicate that Player 2 suggested Players 3 and 4 as candidates for the first quest, citing their trustworthy appearance and support for a successful outcome. Player 3 agreed with this suggestion, emphasizing their trustworthiness and supportiveness. Player 4 expressed suspicion that Players 2 and 5 might be Merlin and Morgana, and stated they would observe their actions while trusting Players 3 and 4. Player 5, in private, recommended selecting Players 2 and 3 for the quest, believing that their leadership and supportiveness could be influenced to cause the quest to fail, thus aiding the evil side.  
+No votes or quest outcomes are recorded yet, and no role claims are mentioned in this phase.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+In the current phase, the discussion is focused on selecting the two players for the first quest, which involves players 2, 3, 4, 5, 6, and 1 in order. Player 2 suggests players 3 and 4 because they appear trustworthy and supportive of a successful outcome. Player 3 agrees with this choice, citing their trustworthiness and support. Player 4 expresses suspicion that players 2 and 5 might be Merlin and Morgana, and indicates a cautious approach, observing their actions closely. Player 5 privately recommends selecting players 2 and 3, believing they are trustworthy and loyal, with the aim of increasing the chance of a failed quest by influencing the outcome. No voting results or quest success/failure status are provided in this conversation segment.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+In the current phase, the players are discussing candidates for the first quest, which involves 2 players. Player 2 suggests Players 3 and 4, citing their lack of suspicious behavior and support for a successful outcome. Player 3 agrees with Player 2, emphasizing trustworthiness and discretion. Player 4 expresses suspicion that Players 2 and 5 might be Merlin and Morgana, and states they will observe their actions while trusting Players 3 and 4. Player 5 privately suggests selecting Player 2 and Player 3, believing their leadership and support increase the chances of a failed quest, aiming to maintain the appearance of trustworthiness while sabotaging the quest. Player 6 supports Players 2 and 3, noting their supportiveness and trustworthiness but remaining cautious and observant. No votes or quest outcome are mentioned yet.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial discussion phase, all players publicly expressed their opinions on the candidates for the first quest, which involves two players. Player 2 suggested Players 3 and 4, citing their lack of suspicious behavior and support for a successful outcome. Player 3 agreed with Player 2, emphasizing trustworthiness and supportiveness. Player 4 expressed suspicion that Players 2 and 5 might be Merlin and Morgana, indicating cautious observation. Player 6 supported Players 2 and 3, maintaining a cautious stance and observing further. Player 5 privately recommended selecting Players 2 and 3, believing they are trustworthy and likely to support a failed quest, aiming to maintain the appearance of loyalty while ensuring failure. No votes or quest outcomes are provided in this conversation.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+In the current public discussion, Player 2 suggested selecting Players 3 and 4 for the first quest, citing their trustworthy appearance and support for a successful outcome. Player 3 agreed with Player 2, emphasizing their trustworthiness and discretion. Player 4 expressed suspicion that Players 2 and 5 might be Merlin and Morgana, respectively, and indicated cautious observation. Player 6 supported Player 2's choice of Players 3 and 4, noting their supportiveness and trustworthiness but remaining cautious. Player 1 supported Player 2's selection of Player 3, believing this combination would help maximize sabotage and gather intelligence.  
+No votes or outcomes are provided yet, and the quest's success or failure has not been revealed. Player 5 (Morgana) has privately suggested choosing Players 2 and 3 to increase the chance of failure, aiming to help the evil side.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "agree",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the discussion for turn 1's quest, players 2 and 3 were suggested as candidates by multiple players, with reasons emphasizing trustworthiness and support for a successful outcome. Player 2 was chosen as the quest leader and selected players 3 and 4, but the Morgana (player 5) privately recommended selecting players 2 and 3 to increase the chances of a failed quest, aiming to sabotage while maintaining a trustworthy appearance. Player 6 supported players 2 and 3, remaining cautious. Player 1 supported the leader's choice of players 3 and 2, aiming to maximize sabotage potential. The vote to approve the quest candidates was to agree, and the decision was to proceed with players 2 and 3 engaging in the quest. No information about the quest's success or failure is provided in this phase.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "The voting status of each player is as follows: player 1: agree,player 2: agree,player 3: agree,player 4: agree,player 5: agree,player 6: agree",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary:  
+In the current phase, the discussion was centered around selecting candidates for the first quest, which involves 2 players. Player 2 suggested Players 3 and 4, citing their trustworthiness and support for a successful outcome. Player 3 agreed with Player 2's suggestion, emphasizing their trustworthiness and the importance of discretion. Player 4 expressed suspicion that Players 2 and 5 might be Merlin and Morgana, but still supported the chosen candidates while remaining cautious. Player 5 privately proposed selecting Players 2 and 3, aiming to influence the quest to fail by including trustworthy players who are receptive to sabotage. Player 6 supported Players 2 and 3, maintaining a cautious stance and observing. Player 1 supported Player 2's choice of Players 3 and 4, aiming to maximize chances of sabotage and gather intel. The group voted unanimously to approve the candidates, and the quest was set to proceed with Players 2 and 3. No information about the quest outcome or role claims is available yet.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "The voting status of each player is as follows: player 1: agree,player 2: agree,player 3: agree,player 4: agree,player 5: agree,player 6: agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "quest successful.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial discussion phase, all players publicly expressed their support for Player 2's suggestion to send Players 3 and 4 on the first quest, citing trustworthiness and support for a successful outcome. Player 4 mentioned suspicion that Players 2 and 5 might be Merlin and Morgana, indicating cautious observation. Player 5 privately proposed selecting Players 2 and 3, aiming to influence the quest outcome by ensuring failure while maintaining a trustworthy appearance. Player 6 also supported the choice of Players 2 and 3, emphasizing cautious observation. Player 1 supported the decision to include Players 2 and 3, aiming to sabotage the quest and gather intel. The vote to approve the quest was unanimous, and the quest was successful.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "The voting status of each player is as follows: player 1: agree,player 2: agree,player 3: agree,player 4: agree,player 5: agree,player 6: agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "quest successful.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "player 1(Assassin) chooses to identify player 2 as Merlin, and the identification is successful.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: During the initial discussion phase, all players publicly expressed their opinions on the candidates for the first quest, which involved two players. Player 2 suggested players 3 and 4, citing their lack of suspicious behavior. Player 3 agreed with this choice, emphasizing trustworthiness. Player 4 expressed suspicion that players 2 and 5 might be Merlin and Morgana, respectively, and remained cautious. Player 5 privately recommended selecting players 2 and 3, aiming to influence the outcome toward failure while maintaining a trustworthy appearance. Player 6 supported players 2 and 3 but continued observing. Player 1 supported Player 2's choice of Player 3, aiming to sabotage the quest and gather intel for later. The group voted unanimously to approve the candidates, and the quest was successful. At the end of the phase, the Assassin (Player 1) successfully identified Player 2 as Merlin.
+--------------------phase:1
+input:Within the context of the Avalon game, please assist player 5 in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to player 5. Specifically, "public" implies that all players have access to the message, while "private" implies that only player 5 has access to it.
+As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
+
+Conversations: [
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 2 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 2",
+        "message": "I suggest players 3 and 4 go on the quest because they haven't shown suspicious behavior and seem more likely to support a successful outcome, helping us gather more evidence and protect the good side.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 3 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 3",
+        "message": "I agree with Player 2's suggestion of Players 3 and 4, as they seem trustworthy and supportive of a successful outcome; I will stay observant and discreet to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 4 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 4",
+        "message": "I believe players 2 and 5 might be Merlin and Morgana, so I will keep observing their actions, while trusting players 3 and 4 based on their support, but I remain cautious to help the good side succeed.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 5 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "I suggest we select Player 2 and Player 3 for the quest. Player 2 has shown leadership and seems trustworthy, and Player 3 has also appeared supportive and loyal. Including these two increases our chances of a failed quest, as I believe they will be receptive to our influence. I recommend these candidates to maintain the appearance of trustworthiness while ensuring the quest's failure.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 6 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 6",
+        "message": "I think players 2 and 3 seem supportive and trustworthy, but I remain cautious and will continue observing to support the good side without revealing my role.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "Please start discussing the candidates for the turn 1 quest (please explain the reasons for your choice appropriately). The number of players in this quest is 2, and the order of each player's speech is player 2、player 3、player 4、player 5、player 6、player 1. player 2 has the power to decide which players will ultimately engage in the quest. Your discussion will be public to other players.player 1 start to speak please.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "player 1",
+        "message": "I support Player 2's choice of Player 3 for the quest. Player 3 appears trustworthy based on previous discussions, and including Player 2 helps us keep the group manageable. I believe selecting these two maximizes our chances of sabotaging the quest while maintaining a plausible front of support. I suggest we proceed with this combination to gather more intel and increase the likelihood of failure, aligning with our strategy to identify Merlin later.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Host",
+        "message": "The quest leader decides that the player 2、player 3 will engage in the quest. You can choose to agree or object. When the number of votes for agreement exceeds 1/2, the selection will be passed and the quest will be executed. Otherwise, the selection will be re-selected until the selection is passed. Please vote to agree or disagree (vote directly without explanation).You can see other players' choices only after you make your choice.",
+        "phase": "1"
+    },
+    {
+        "message_type": "private",
+        "name": "Self",
+        "message": "agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "The voting status of each player is as follows: player 1: agree,player 2: agree,player 3: agree,player 4: agree,player 5: agree,player 6: agree",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "quest successful.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "host",
+        "message": "player 1(Assassin) chooses to identify player 2 as Merlin, and the identification is successful.",
+        "phase": "1"
+    },
+    {
+        "message_type": "public",
+        "name": "Host",
+        "message": "Evil Side wins.",
+        "phase": "1"
+    }
+]
+
+Use the following format:
+Summary: <summary>
+output:Summary: In the current phase, the players discussed the candidates for the first quest, which involved two players. Player 2 suggested Players 3 and 4, citing their trustworthiness. Player 3 agreed with this choice, supporting a successful outcome. Player 4 expressed suspicion that Player 2 and Player 5 might be Merlin and Morgana, and remained cautious. Player 5 privately recommended selecting Player 2 and Player 3 to increase the chances of sabotaging the quest, aiming to maintain a trustworthy appearance while ensuring failure. Player 6 supported Player 2 and Player 3, emphasizing cautious observation. Player 1 supported Player 2's choice of Player 3, aiming to maximize sabotage potential. The group voted unanimously to approve the candidates, and the quest was successful. Subsequently, Player 1 (the Assassin) identified Player 2 as Merlin, and this identification was successful, resulting in an evil side victory.
+--------------------
