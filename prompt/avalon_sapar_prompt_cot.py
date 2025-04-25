@@ -13,7 +13,7 @@ Wrap your internal reasoning in <thinking>…</thinking> tags, then produce the 
 """
 
 system_prompt_2 = \
-    """You are an Avalon gamer and you are playing a 6-player Avalon game. 
+    cot_prefix + """You are an Avalon gamer and you are playing a 6-player Avalon game. 
 This game is based on text conversations. Here are the game rules: 
 
 Roles: The moderator is also the host, he organized this game and you need to answer his instructions correctly. Don’t talk with the moderator. There are five roles in the game, Merlin, Percival, Loyal Servant, Morgana, Assassin. Merlin, Percival and Loyal Servant belong to the good side and Morgana and Assassin belong to the evil side. 
@@ -26,44 +26,44 @@ Objectives: your goal is to help your camp get 3 points and win the game. If you
 You are {name}, the {role}. Your playing style is that {strategy}. There are experience of previous games provided: <experience>
 suggestions from previous games: {suggestion}
 strategies of other roles from previous games: {other_strategy}
-</experience>.""" + cot_prefix
+</experience>."""
 
 summary_prompt_2 = \
-    """Within the context of the Avalon game, please assist {name} in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to {name}. Specifically, "public" implies that all players have access to the message, while "private" implies that only {name} has access to it.
+    cot_prefix + """Within the context of the Avalon game, please assist {name} in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to {name}. Specifically, "public" implies that all players have access to the message, while "private" implies that only {name} has access to it.
 As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
 
 Conversations: {conversation}
 
 Use the following format:
-Summary: <summary>""" + cot_prefix
+Summary: <summary>"""
 
 step_reflection_prompt_2 = \
-    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of other players according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    cot_prefix + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of other players according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
 </information>
 
-the summary is <summary>{summary}</summary>""" + cot_prefix
+the summary is <summary>{summary}</summary>"""
 analysis_prompt_2 = step_reflection_prompt_2
 analysis_teammate_2 = \
-    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your teammates according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    cot_prefix + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your teammates according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
 </information>
 
-the summary is <summary>{summary}</summary>""" + cot_prefix
+the summary is <summary>{summary}</summary>"""
 analysis_enemy_2 = \
-    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your enemies according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    cot_prefix + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your enemies according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
 </information>
 
-the summary is <summary>{summary}</summary>""" + cot_prefix
+the summary is <summary>{summary}</summary>"""
 plan_prompt_2 = \
-    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+    cot_prefix + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
 
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -86,10 +86,10 @@ my plan is <plan>
 </plan>
 </output> 
 
-your plans for each turn should be described with no more than one sentence. """ + cot_prefix
+your plans for each turn should be described with no more than one sentence. """
 
 action_prompt_2 = \
-    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your objective is to make decisions based on your role, your game goal and the current game state. There are five types of actions you can take: choosing players, voting (agree or disagree), engaging in quests (make quests succeed or fail), using non-verbal signals (raise hands up, put hands down, open eyes, or close eyes), and choosing to remain silent. Only one action type can be selected at a time. If you decide to choose players, you can choose multiple players according to Host's question.
+   cot_prefix +  """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your objective is to make decisions based on your role, your game goal and the current game state. There are five types of actions you can take: choosing players, voting (agree or disagree), engaging in quests (make quests succeed or fail), using non-verbal signals (raise hands up, put hands down, open eyes, or close eyes), and choosing to remain silent. Only one action type can be selected at a time. If you decide to choose players, you can choose multiple players according to Host's question.
 
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -145,7 +145,7 @@ Here is my action based on the chosen action type:
 the output format is <output>
 <actions>['making quests fail']</actions>
 </output>
-</example>""" + cot_prefix
+</example>"""
 response_prompt_2 = \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
 
@@ -186,7 +186,7 @@ my response is <response>...</response>
 
 
 suggestion_prompt_2 = \
-    """Your task is to provide 3 suggestions for {name}'s playing strategy of the role {role} in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
+    cot_prefix + """Your task is to provide 3 suggestions for {name}'s playing strategy of the role {role} in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
 
 The roles of the players:
 {roles}
@@ -220,10 +220,10 @@ previous strategies of other roles:
 Your analysis should be no more than 100 words and the analysis should be general for future games (This implies that you should avoid referencing player x directly and instead use the respective role names when giving your analysis). And analyze together with previous strategies.
 
 For example:
-The strategy of Merlin is that ... The strategy of Assassin is that... The strategy of ... is ...""" + cot_prefix
+The strategy of Merlin is that ... The strategy of Assassin is that... The strategy of ... is ..."""
 
 update_prompt_2 = \
-    """Your task is to help {name} improve his playing strategy of the role {role} a Avalon game with suggestions.
+    cot_prefix + """Your task is to help {name} improve his playing strategy of the role {role} a Avalon game with suggestions.
 
 {name}'s strategy:
 {strategy}
