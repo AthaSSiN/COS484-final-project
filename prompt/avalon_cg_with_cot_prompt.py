@@ -7,15 +7,18 @@
 # describe:
 #
 # Chain-of-Thought prefix tailored for Avalon gameplay
-cot_prefix = """
-Before you respond, think through your decision step-by-step, then wrap *all* that reasoning
-in one <thinking>…</thinking> tag. After that, give *only* your final action.
+cot_prefix = "Before you respond, pause to Clarify & Generate:
 
 <thinking>
-Consider your role and objective; list key facts; identify uncertainties; weigh your candidate actions;
-simulate their likely outcomes; then pick the action with the highest win probability.
+1. Clarify: Restate your current instruction or question in your own words.
+2. Facts: List any relevant game state or conversation snippets.
+3. Unknowns: Point out what you still need to decide or ask.
+4. Plan: Describe briefly how you’ll turn those unknowns into the output.
 </thinking>
-"""
+
+Then produce only the requested content (questions, answers, reflections, etc.)."
+
+
 
 rule_role_prompt = cot_prefix + """You are playing a game called the Avalon with some other players. This game is based on text conversations. Here are the game rules: 
 Roles: The moderator is also the host, he organized this game and you need to answer his instructions correctly. Don’t talk with the moderator. There are five roles in the game, Merlin, Percival, Loyal Servant, Morgana, Assassin. Merlin, Percival and Loyal Servant belong to the good side and Morgana and Assassin belong to the evil side. 
