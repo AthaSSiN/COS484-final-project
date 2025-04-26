@@ -6,7 +6,20 @@
 #
 # describe:
 #
-system_prompt = \
+
+sapar_cot_prefix = """
+Before you respond, think through your decision step-by-step, then wrap *all* that reasoning
+in one <thinking>…</thinking> tag. After that, give *only* your final action.
+
+<thinking>
+Consider your role and objective; list key facts; identify uncertainties; weigh your candidate actions;
+simulate their likely outcomes; then pick the action with the highest win probability.
+</thinking>
+"""
+
+
+
+system_prompt = sapar_cot_prefix + \
     """You are an Avalon gamer and you are playing a 6-player Avalon game. 
 This game is based on text conversations. Here are the game rules: 
 
@@ -22,7 +35,7 @@ suggestions from previous games: {suggestion}
 strategies of other roles from previous games: {other_strategy}
 </experience>."""
 
-summary_prompt = \
+summary_prompt = sapar_cot_prefix + \
     """Within the context of the Avalon game, please assist {name} in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to {name}. Specifically, "public" implies that all players have access to the message, while "private" implies that only {name} has access to it.
 As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
 
@@ -31,7 +44,7 @@ Conversations: {conversation}
 Use the following format:
 Summary: <summary>"""
 
-step_reflection_prompt = \
+step_reflection_prompt =sapar_cot_prefix + \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of other players according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -42,7 +55,7 @@ before you complete this, add your thinking process in <thinking></thinking>
 
 the summary is <summary>{summary}</summary>"""
 analysis_prompt = step_reflection_prompt
-analysis_teammate = \
+analysis_teammate =sapar_cot_prefix + \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your teammates according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -50,7 +63,7 @@ your role is <role>{role}</role>
 </information>
 
 the summary is <summary>{summary}</summary>"""
-analysis_enemy = \
+analysis_enemy =sapar_cot_prefix + \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your enemies according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -58,7 +71,7 @@ your role is <role>{role}</role>
 </information>
 
 the summary is <summary>{summary}</summary>"""
-plan_prompt = \
+plan_prompt = sapar_cot_prefix +\
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
 
 the information of yourself is <information>
@@ -84,7 +97,7 @@ my plan is <plan>
 
 your plans for each turn should be described with no more than one sentence. """
 
-action_prompt = \
+action_prompt =sapar_cot_prefix + \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your objective is to make decisions based on your role, your game goal and the current game state. There are five types of actions you can take: choosing players, voting (agree or disagree), engaging in quests (make quests succeed or fail), using non-verbal signals (raise hands up, put hands down, open eyes, or close eyes), and choosing to remain silent. Only one action type can be selected at a time. If you decide to choose players, you can choose multiple players according to Host's question.
 
 the information of yourself is <information>
@@ -142,7 +155,7 @@ the output format is <output>
 <actions>['making quests fail']</actions>
 </output>
 </example>"""
-response_prompt = \
+response_prompt = sapar_cot_prefix +\
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
 
 the information of yourself is <information>
@@ -161,7 +174,7 @@ current actions <actions>{actions}</actions>
 the output format is <output>
 my response is <response>...</response>
 </output> """
-response_prompt_without_action = \
+response_prompt_without_action =sapar_cot_prefix + \
     """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the environment state. Your response should be no more than 100 words.
 
 the information of yourself is <information>
@@ -181,7 +194,7 @@ my response is <response>...</response>
 </output> """
 
 
-suggestion_prompt = \
+suggestion_prompt =sapar_cot_prefix + \
     """Your task is to provide 3 suggestions for {name}'s playing strategy of the role {role} in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
 
 The roles of the players:
@@ -202,7 +215,7 @@ Based on previous suggestions:
 Give your suggestions, No more than two sentences per suggestion and the suggestions should be general for future games (This implies that you should avoid referencing player x directly and instead use the respective role names when making your suggestion.) and effectively help him achieve his game goal in future games."""
 
 
-strategy_prompt = \
+strategy_prompt = sapar_cot_prefix +\
     """Your task is to help {name} analyze the strategies of other players in a Avalon game, according to the game log and game ending. The game log and game ending are summarized in paragraphs.
 The roles of the players:
 {roles}
@@ -218,7 +231,7 @@ Your analysis should be no more than 100 words and the analysis should be genera
 For example:
 The strategy of Merlin is that ... The strategy of Assassin is that... The strategy of ... is ..."""
 
-update_prompt = \
+update_prompt = sapar_cot_prefix +\
     """Your task is to help {name} improve his playing strategy of the role {role} a Avalon game with suggestions.
 
 {name}'s strategy:

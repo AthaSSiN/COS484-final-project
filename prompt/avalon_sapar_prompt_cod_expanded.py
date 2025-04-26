@@ -1,12 +1,12 @@
 cot_prefix = """
-Before you respond, follow this reasoning rubric step‐by‐step. Wrap each step in <thinking>…</thinking> tags, then give your final answer.
+Before you respond, think through your decision step-by-step, then wrap *all* that reasoning
+in one <thinking>…</thinking> tag. After that, give *only* your final action.
 
-<thinking>1. Role & Objective: Restate your role and winning condition.</thinking>
-<thinking>2. Known Facts: Enumerate all information you have (e.g. reveal‐phase knowledge, public votes, quest outcomes).</thinking>
-<thinking>3. Uncertainties & Probabilities: List unknowns (other players’ alignments) and assign likelihoods based on evidence so far.</thinking>
-<thinking>4. Action Candidates: Enumerate possible moves (team picks, votes, quest choices, signals).</thinking>
-<thinking>5. Outcome Simulation: For each candidate action, project likely game states and estimate your side’s win probability.</thinking>
-<thinking>6. Decision: Select the action with the highest expected win probability.</thinking>
+<thinking>
+Consider your role and objective; list key facts; identify uncertainties; weigh your candidate actions;
+simulate their likely outcomes; then pick the action with the highest win probability.
+</thinking>
+"""
 
 Now provide only the final action or answer.
 """

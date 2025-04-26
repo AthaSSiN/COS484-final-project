@@ -8,13 +8,13 @@
 #
 # Chain-of-Thought prefix tailored for Avalon gameplay
 cot_prefix = """
-Before you respond, follow these reasoning steps and wrap each in <thinking>…</thinking> tags:
-1. Role & Objective: Recall your role and winning condition.
-2. Gather Info: Enumerate reveal-phase knowledge, past quest outcomes, and voting history.
-3. Infer Alignments: Assess uncertainties and assign likelihoods to other players’ roles.
-4. Plan Actions: List possible moves (team proposals, votes, quest choices, signals).
-5. Simulate Outcomes: Project each action’s impact on your side’s win probability.
-6. Decide: Select the action that maximizes your side’s chance of victory.
+Before you respond, think through your decision step-by-step, then wrap *all* that reasoning
+in one <thinking>…</thinking> tag. After that, give *only* your final action.
+
+<thinking>
+Consider your role and objective; list key facts; identify uncertainties; weigh your candidate actions;
+simulate their likely outcomes; then pick the action with the highest win probability.
+</thinking>
 """
 
 rule_role_prompt = cot_prefix + """You are playing a game called the Avalon with some other players. This game is based on text conversations. Here are the game rules: 
