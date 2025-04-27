@@ -4,10 +4,10 @@ import pandas as pd
 from collections import defaultdict
 
 # Define the lists (add more elements as needed)
-player_1_models = ["4_1_nano", "4_1_nano", "sapar_4_1_nano"]
-player_2_models = ["4_1_mini", "4o_mini", "cg_4_1_mini"]
+player_1_models = ["4_1_nano", "4_1_nano", "sapar_4_1_nano", "sapar_4_1_nano", "sapar_4_1_nano"]
+player_2_models = ["4_1_mini", "4o_mini", "cg_4_1_mini", "sapar_cot_4_1_nano", "sapar_cot_new_4_1_nano"]
 player_1_sides = ["evil", "good"]
-max_indices = [4, 4, 9]
+max_indices = [4, 4, 9, 4, 4]
 
 base_log_dir = "/home/atharv/courses/LLM-Game-Agent/playing_log/avalon/battle"
 # Structure: {(p1_model, p2_model): {p1_good_wins: 0, p1_evil_wins: 0, p2_good_wins: 0, p2_evil_wins: 0, total_games: 0}}

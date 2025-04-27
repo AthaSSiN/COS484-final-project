@@ -1,16 +1,5 @@
-cot_prefix_play = """
-Before you respond, think through your decision step-by-step from your role's perspective, considering all known facts and your objective. Wrap *all* your reasoning in a <thinking>…</thinking> tag.
-
-<thinking>
-First, recall your role, goal, and current strategy. Next, list what you know from previous conversations and observations. Identify uncertainties and critical unknowns. Consider potential actions, simulate their likely results based on the game rules and player behaviors, and finally select the action with the highest chance of helping your side win.
-</thinking>
-
-Now provide only the final action or answer.
-"""
-
-
 system_prompt_2 = \
-    cot_prefix_play + """You are an Avalon gamer and you are playing a 6-player Avalon game. 
+    """You are an Avalon gamer and you are playing a 6-player Avalon game. 
 This game is based on text conversations. Here are the game rules: 
 
 Roles: The moderator is also the host, he organized this game and you need to answer his instructions correctly. Don't talk with the moderator. There are five roles in the game, Merlin, Percival, Loyal Servant, Morgana, Assassin. Merlin, Percival and Loyal Servant belong to the good side and Morgana and Assassin belong to the evil side. 
@@ -26,22 +15,12 @@ strategies of other roles from previous games: {other_strategy}
 </experience>."""
 
 
-
-cot_prefix_summary = """
-Before summarizing, carefully review all relevant conversations and players' behaviors, then think step-by-step about the most important facts to highlight. Wrap all reasoning in a <thinking>…</thinking> tag.
-
-<thinking>
-First, note who claimed which roles, who supported or opposed quest candidates, players' voting patterns, and quest outcomes. Prioritize facts that impact role deduction or quest results. Then distill everything into a concise but complete summary.
-</thinking>
-
-Now output only the final structured summary.
-"""
-
-
-
-
 summary_prompt_2 = \
-    cot_prefix_summary + """Within the context of the Avalon game, please assist {name} in summarizing the conversations known to them from the current phase. These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to {name}. Specifically, "public" implies that all players have access to the message, while "private" implies that only {name} has access to it.
+    """Within the context of the Avalon game, please assist {name} in summarizing the conversations known to them from the current phase.
+    
+    Before summarizing, carefully review all relevant conversations and players' behaviors, then think and reason step-by-step about the most important facts to highlight. Wrap all reasoning in a <thinking></thinking> tag.
+    
+    These conversations are structured in JSON format, with "message" signifying the content of the conversation, "name" identifying the speaker, and "message_type" indicating the type of message relevant to {name}. Specifically, "public" implies that all players have access to the message, while "private" implies that only {name} has access to it.
 As this turn progresses, the summary should includes who claimed his role, what each player thinks about the quest candidates, what the voting status of the players is towards the candidates, Whether the task succeeded or failed.
 
 Conversations: {conversation}
@@ -49,20 +28,18 @@ Conversations: {conversation}
 Use the following format:
 Summary: <summary>"""
 
-
-cot_prefix_analysis = """
-Before analyzing, step-by-step reflect on observed behaviors and strategic clues. Wrap all your thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, recall your own information and what you know about each player's behavior. Identify any patterns that suggest their roles. Weigh how their actions fit different role profiles. Make a short, logical deduction about their likely roles and strategies.
-</thinking>
-
-Now provide only your final analysis, no more than 100 words.
-"""
-
-
 step_reflection_prompt_2 = \
-    cot_prefix_analysis + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of other players according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of other players according to their behaviors. 
+    
+    Before providing the analysis, think and reason step-by-step on observed behaviors and strategic clues. Wrap all your thinking in a <thinking></thinking> tag.
+    
+    <thinking_instructions>
+    First, recall your own information and what you know about each player's behavior. Next, think about who might be in your team and who might be your enemy. Identify any patterns that suggest their roles by considering how their actions align with your role and strategy and how they fit different role profiles. Make a short, logical deduction about their likely roles and strategies.  
+    </thinking_instructions>
+    
+    Then, provide your final analysis.
+
+    The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
@@ -71,7 +48,17 @@ your role is <role>{role}</role>
 the summary is <summary>{summary}</summary>"""
 analysis_prompt_2 = step_reflection_prompt_2
 analysis_teammate_2 = \
-    cot_prefix_analysis + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your teammates according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your teammates according to their behaviors. 
+    
+    Before providing the analysis, think and reason step-by-step on observed behaviors and strategic clues. Wrap all your thinking in a <thinking></thinking> tag.
+    
+    <thinking_instructions>
+    First, recall your own information and what you know about each player's behavior. Next, think about who might be in your team. Identify any patterns that suggest their roles by considering how their actions align with your role and strategy and how they fit different role profiles. Make a short, logical deduction about their likely roles and strategies.  
+    </thinking_instructions>
+    
+    Then, provide your final analysis.
+    
+    The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
@@ -79,7 +66,17 @@ your role is <role>{role}</role>
 
 the summary is <summary>{summary}</summary>"""
 analysis_enemy_2 = \
-    cot_prefix_analysis + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your enemies according to their behaviors. The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
+    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to analyze roles and strategies of the players who might be your enemies according to their behaviors.
+    
+    Before providing the analysis, think and reason step-by-step on observed behaviors and strategic clues. Wrap all your thinking in a <thinking></thinking> tag.
+    
+    <thinking_instructions>
+    First, recall your own information and what you know about each player's behavior. Next, think about who might be your enemy. Identify any patterns that suggest their roles by considering how their actions align with your role and strategy and how they fit different role profiles. Make a short, logical deduction about their likely roles and strategies.  
+    </thinking_instructions>
+    
+    Then, provide your final analysis.
+    
+    The behaviors are summarized in paragraphs. The analysis should be no more than 100 words.
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
@@ -88,18 +85,20 @@ your role is <role>{role}</role>
 the summary is <summary>{summary}</summary>"""
 
 cot_prefix_plan = """
-Before planning, think carefully through your decision step-by-step from a strategic perspective. Wrap all thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, restate your role, goal, and strategy. Reflect on your previous plan and whether it still makes sense based on the new environment. Consider any changes in player behavior, voting patterns, or quest outcomes. Then, formulate a clear and actionable plan for the next turns, in one sentence per turn.
-</thinking>
-
-Now provide only your final plan.
+\n\n
 """
 
 
 plan_prompt_2 = \
-    cot_prefix_plan + """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+    """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to devise a playing plan that remains in harmony with your game goal and existing strategy, while also incorporating insights from your previous plan and current environment state.
+    
+    Before planning, think and reason step-by-step on what decisions to take next from a strategic perspective. Wrap all thinking in a <thinking></thinking> tag.
+    
+    <thinking_instructions>
+    While thinking, first, restate your role, goal, and strategy. Reflect on your previous plan and whether it still makes sense based on the new environment. Consider any changes in player behavior, voting patterns, or quest outcomes. Using this, come up with a new plan.
+    </thinking_instructions>
+    
+    Then, formulate a clear and actionable plan for the next turns, in one sentence per turn.
 
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -124,20 +123,16 @@ my plan is <plan>
 
 your plans for each turn should be described with no more than one sentence. """
 
-
-cot_prefix_action = """
-Before selecting an action, carefully reason step-by-step about the options. Wrap your thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, restate your role, game goal, and key observations. Then, review the candidate actions available. Simulate how each action would help or hurt your side based on the current state. Finally, select the action type and specific action(s) with the highest expected impact for winning.
-</thinking>
-
-Now output only your final chosen action(s).
-"""
-
-
 action_prompt_2 = \
-   cot_prefix_action +  """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your objective is to make decisions based on your role, your game goal and the current game state. There are five types of actions you can take: choosing players, voting (agree or disagree), engaging in quests (make quests succeed or fail), using non-verbal signals (raise hands up, put hands down, open eyes, or close eyes), and choosing to remain silent. Only one action type can be selected at a time. If you decide to choose players, you can choose multiple players according to Host's question.
+   """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your objective is to make decisions based on your role, your game goal and the current game state. There are five types of actions you can take: choosing players, voting (agree or disagree), engaging in quests (make quests succeed or fail), using non-verbal signals (raise hands up, put hands down, open eyes, or close eyes), and choosing to remain silent. Only one action type can be selected at a time. If you decide to choose players, you can choose multiple players according to Host's question.
+   
+   Before selecting an action, carefully reason step-by-step about the options. Wrap your thinking in a <thinking></thinking> tag.
+
+    <thinking_instructions>
+    First, restate your role, game goal, and key observations. Then, review the candidate actions available. Simulate how each action would help or hurt your side based on the current state. Finally, select the action type and specific action(s) with the highest expected impact for winning.
+    </thinking_instructions>
+
+    Now output only your final chosen action(s).
 
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -195,20 +190,11 @@ the output format is <output>
 </output>
 </example>"""
 
-
-cot_prefix_response = """
-Before responding, think step-by-step how to explain your decision based on your strategy and the current game situation. Wrap your thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, recall your role, goal, and the Host's specific question. Then, connect your current plan and selected action(s) to the question logically. Keep the explanation concise, clear, and aligned with your overall strategy.
-</thinking>
-
-Now output only your response, within 100 words.
-"""
-
 response_prompt_2 = \
-  cot_prefix_response+  """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
+  """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the provided actions. Your response should be no more than 100 words.
 
+    IMPORTANT! Do not include any internal thoughts or reasoning in your response. Just provide the final answer because you can not reveal your role or strategy in your response, as it will be used against you in the game and you will lose.
+    
 the information of yourself is <information>
 your name is <name>{name}</name>
 your role is <role>{role}</role>
@@ -225,8 +211,11 @@ current actions <actions>{actions}</actions>
 the output format is <output>
 my response is <response>...</response>
 </output> """
+
 response_prompt_2_without_action = \
- cot_prefix_response+   """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the environment state. Your response should be no more than 100 words.
+ """You currently assume the {name} within an Avalon game, and the game has progressed to the {phase}. Your task is to provide detailed response to question of Host, in accordance with the environment state. Your response should be no more than 100 words.
+ 
+ IMPORTANT! Do not include any internal thoughts or reasoning in your response. Just provide the final answer because you can not reveal your role or strategy in your response, as it will be used against you in the game and you will lose.
 
 the information of yourself is <information>
 your name is <name>{name}</name>
@@ -244,18 +233,16 @@ the output format is <output>
 my response is <response>...</response>
 </output> """
 
-cot_prefix_suggestion = """
-Before suggesting, reason step-by-step about past behaviors, results, and how {name} could perform better. Wrap all thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, review the provided game logs and previous suggestions. Identify common mistakes or weak points in their strategy. Suggest improvements that are general (not player-specific) and effective for achieving their role's objective. Keep each suggestion actionable and clear within two sentences.
-</thinking>
-
-Now output only the final suggestions.
-"""
-
 suggestion_prompt_2 = \
-    cot_prefix_suggestion + """Your task is to provide 3 suggestions for {name}'s playing strategy of the role {role} in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
+    """Your task is to provide 3 suggestions for {name}'s playing strategy of the role {role} in Avalon games, according to the game log. The game log includes the summaries of different turns of a round game.
+    
+    Before suggesting, think and reason step-by-step about past behaviors, results, and how {name} could perform better. Wrap all thinking in a <thinking></thinking> tag.
+
+    <thinking_instructions>
+    First, review the provided game logs and previous suggestions. Identify common mistakes or weak points in their strategy. Suggest improvements that are general (not player-specific) and effective for achieving their role's objective.
+    </thinking_instructions>
+
+    Now output only the final suggestions with no more than two sentences per suggestion.
 
 The roles of the players:
 {roles}
@@ -276,6 +263,13 @@ Give your suggestions, No more than two sentences per suggestion and the suggest
 
 strategy_prompt_2 = \
     """Your task is to help {name} analyze the strategies of other players in a Avalon game, according to the game log and game ending. The game log and game ending are summarized in paragraphs.
+    
+    Before providing the strategy, think and reason step-by-step about past behaviors, results and how other players played, their strengths and weaknesses. Wrap all thinking in a <thinking></thinking> tag.
+
+    <thinking_instructions>
+    First, review the provided game logs and previous suggestions. Identify common mistakes or weak points in other player's strategy.
+    </thinking_instructions>
+    
 The roles of the players:
 {roles}
 
@@ -290,24 +284,18 @@ Your analysis should be no more than 100 words and the analysis should be genera
 For example:
 The strategy of Merlin is that ... The strategy of Assassin is that... The strategy of ... is ..."""
 
-
-cot_prefix_update = """
-Before improving the strategy, think step-by-step about how to keep its strengths and address weaknesses. Wrap all thinking in a <thinking>…</thinking> tag.
-
-<thinking>
-First, carefully review the current strategy and the given suggestions. Identify which parts of the strategy are working well and which could be enhanced. Then rewrite the strategy in 1-2 sentences to optimize it for future games, while maintaining the original's advantages.
-</thinking>
-
-Now output only the final updated strategy.
-"""
-
-
 update_prompt_2 = \
-    cot_prefix_update + """Your task is to help {name} improve his playing strategy of the role {role} a Avalon game with suggestions.
+    """Your task is to help {name} improve his playing strategy of the role {role} a Avalon game with suggestions.
+    
+    Before answering, think and reason step-by-step about how to keep the current strategy's strengths and address weaknesses. Wrap all thinking in a <thinking></thinking> tag.
+
+    <thinking>
+    First, recall the goals for the role {role}. Remember that to carefully review the current strategy and the given suggestions. Identify which parts of the strategy are working well and which could be enhanced for the the role {role}. Look at the suggestions and see how they can be integrated into the current strategy.
+    </thinking>
+
+    Then rewrite the thought strategy in 1-2 sentences to optimize it for future games, while maintaining the original's advantages.
 
 {name}'s strategy:
-{strategy}
-
 suggestions:
 {suggestions}
 
